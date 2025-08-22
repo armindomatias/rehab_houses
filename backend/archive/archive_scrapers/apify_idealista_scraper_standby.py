@@ -11,12 +11,11 @@ the Actor remains ready in the background to handle arbitrary HTTP requests,
 just like any web or API server.
 """
 
-APIFY_USER_ID = "OxvCdVsmM3ICmycCE"
-APIFY_API_TOKEN = "apify_api_K4IJ4NRKvxbndOx05CaEjVQgR4DJPI1Y6R0n"
-ACTOR_ID = "dz_omar~idealista-scraper-api"
+APIFY_USER_ID = 0 #get it from env
+APIFY_API_TOKEN = 0 #get it from env
+ACTOR_ID = 0 #get it from env
 
 url_apify = "https://api.apify.com/v2/acts/"
-
 
 url_actor = "https://dz-omar--idealista-scraper-api.apify.actor/"
 

@@ -1,0 +1,14 @@
+2025-08-17 00:09:54,015 - src.apify_idealista_scraper - INFO - Initializing ApifyIdealistaScraper...
+2025-08-17 00:09:54,015 - src.apify_idealista_scraper - INFO - Loading environment variables...
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - APIFY_USER_ID loaded successfully
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - APIFY_API_TOKEN loaded successfully
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - APIFY_ACTOR_ID loaded successfully: dz_omar~idealista-scraper-api
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - ApifyIdealistaScraper initialized successfully
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - Starting single URL scraping for: https://www.idealista.pt/imovel/34366468/
+2025-08-17 00:09:54,018 - src.apify_idealista_scraper - INFO - Apify API URL created
+2025-08-17 00:09:54,019 - src.apify_idealista_scraper - INFO - Making API request to Apify...
+2025-08-17 00:10:04,570 - src.apify_idealista_scraper - INFO - API request completed in 10.55 seconds
+2025-08-17 00:10:04,571 - src.apify_idealista_scraper - INFO - Response status code: 201
+2025-08-17 00:10:04,571 - src.apify_idealista_scraper - INFO - API request successful
+2025-08-17 00:10:04,571 - src.apify_idealista_scraper - INFO - Successfully parsed JSON response with 1 items
+2025-08-17 00:10:04,575 - src.apify_idealista_scraper - INFO - Data saved to: data/scraped_data/idealista_listing_34366468.json

@@ -1,0 +1,59 @@
+2025-08-21 23:47:14,111 - __main__ - INFO - Initializing DivisionClassifier...
+2025-08-21 23:47:14,111 - __main__ - INFO - Loading environment variables...
+2025-08-21 23:47:14,112 - __main__ - INFO - OPENAI_API_KEY loaded successfully
+2025-08-21 23:47:14,156 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,382 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,391 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,396 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,397 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,398 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:14,399 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:47:20,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:20,264 - __main__ - INFO - Classified image in 5.87s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/32/ec/ef/290881873.jpg
+2025-08-21 23:47:20,952 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:20,956 - __main__ - INFO - Classified image in 6.57s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/5e/21/71/290881815.jpg
+2025-08-21 23:47:22,077 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:22,081 - __main__ - INFO - Classified image in 7.92s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9a/c2/be/290881862.jpg
+2025-08-21 23:47:22,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:22,197 - __main__ - INFO - Classified image in 7.80s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c7/48/db/290881861.jpg
+2025-08-21 23:47:23,229 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:23,232 - __main__ - INFO - Classified image in 8.84s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/4e/12/290881867.jpg
+2025-08-21 23:47:23,236 - __main__ - INFO - Progress: 5/17 classified
+2025-08-21 23:47:26,383 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:26,385 - __main__ - INFO - Classified image in 5.43s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/07/34/ab/290881878.jpg
+2025-08-21 23:47:27,148 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:27,152 - __main__ - INFO - Classified image in 4.95s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/6e/c6/85/290881871.jpg
+2025-08-21 23:47:28,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:28,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:28,741 - __main__ - INFO - Classified image in 5.51s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/be/2c/80/290881864.jpg
+2025-08-21 23:47:28,742 - __main__ - INFO - Classified image in 8.48s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/80/40/3a/290881865.jpg
+2025-08-21 23:47:32,305 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:32,308 - __main__ - INFO - Classified image in 10.23s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4d/03/81/290881860.jpg
+2025-08-21 23:47:32,312 - __main__ - INFO - Progress: 10/17 classified
+2025-08-21 23:47:32,583 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:32,587 - __main__ - INFO - Classified image in 6.20s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/93/98/290881877.jpg
+2025-08-21 23:47:34,555 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:34,558 - __main__ - INFO - Classified image in 7.41s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/06/57/f4/290881833.jpg
+2025-08-21 23:47:35,250 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:35,253 - __main__ - INFO - Classified image in 6.51s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/ae/e9/290881869.jpg
+2025-08-21 23:47:36,721 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:36,724 - __main__ - INFO - Classified image in 4.42s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/76/0b/99/290881816.jpg
+2025-08-21 23:47:36,927 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:36,930 - __main__ - INFO - Classified image in 8.18s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c0/5f/39/290881863.jpg
+2025-08-21 23:47:36,931 - __main__ - INFO - Progress: 15/17 classified
+2025-08-21 23:47:39,786 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:39,789 - __main__ - INFO - Classified image in 5.23s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/7b/36/c3/290881868.jpg
+2025-08-21 23:47:40,030 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:47:40,033 - __main__ - INFO - Classified image in 7.45s: https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/db/57/39/290881859.jpg
+2025-08-21 23:47:40,035 - __main__ - INFO - Aggregated results saved to: data/image_analysis/idealista_listing_34357924_classifications_aggregated.json
+2025-08-21 23:47:40,038 - __main__ - INFO - Data saved to: data/image_analysis/idealista_listing_34357924_classifications_compact.json

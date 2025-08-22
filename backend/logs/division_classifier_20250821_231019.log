@@ -1,0 +1,72 @@
+2025-08-21 23:10:19,255 - __main__ - INFO - Initializing DivisionClassifier...
+2025-08-21 23:10:19,255 - __main__ - INFO - Loading environment variables...
+2025-08-21 23:10:19,255 - __main__ - INFO - OPENAI_API_KEY loaded successfully
+2025-08-21 23:10:19,292 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:10:19,292 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:10:38,625 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:10:38,696 - __main__ - INFO - OpenAI request completed in 19.40 seconds
+2025-08-21 23:10:38,696 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:10:38,696 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:11:01,669 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:11:01,673 - __main__ - INFO - OpenAI request completed in 22.98 seconds
+2025-08-21 23:11:01,674 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:11:01,674 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:11:29,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:11:29,116 - __main__ - INFO - OpenAI request completed in 27.44 seconds
+2025-08-21 23:11:29,117 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:11:29,117 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:11:47,481 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:11:47,484 - __main__ - INFO - OpenAI request completed in 18.37 seconds
+2025-08-21 23:11:47,485 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:11:47,485 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:12:07,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:12:07,485 - __main__ - INFO - OpenAI request completed in 20.00 seconds
+2025-08-21 23:12:07,486 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:12:07,486 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:12:28,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:12:28,597 - __main__ - INFO - OpenAI request completed in 21.11 seconds
+2025-08-21 23:12:28,598 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:12:28,598 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:12:47,543 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:12:47,550 - __main__ - INFO - OpenAI request completed in 18.95 seconds
+2025-08-21 23:12:47,551 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:12:47,552 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:13:02,561 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:13:02,563 - __main__ - INFO - OpenAI request completed in 15.01 seconds
+2025-08-21 23:13:02,563 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:13:02,563 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:13:25,234 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:13:25,237 - __main__ - INFO - OpenAI request completed in 22.67 seconds
+2025-08-21 23:13:25,238 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:13:25,238 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:13:43,677 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:13:43,679 - __main__ - INFO - OpenAI request completed in 18.44 seconds
+2025-08-21 23:13:43,680 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:13:43,680 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:14:11,987 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:14:11,994 - __main__ - INFO - OpenAI request completed in 28.31 seconds
+2025-08-21 23:14:11,996 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:14:11,996 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:14:26,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:14:26,781 - __main__ - INFO - OpenAI request completed in 14.79 seconds
+2025-08-21 23:14:26,782 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:14:26,782 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:14:48,281 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:14:48,284 - __main__ - INFO - OpenAI request completed in 21.50 seconds
+2025-08-21 23:14:48,285 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:14:48,285 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:15:06,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:15:06,339 - __main__ - INFO - OpenAI request completed in 18.05 seconds
+2025-08-21 23:15:06,340 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:15:06,340 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:15:25,774 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:15:25,783 - __main__ - INFO - OpenAI request completed in 19.44 seconds
+2025-08-21 23:15:25,784 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:15:25,784 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:15:42,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:15:42,757 - __main__ - INFO - OpenAI request completed in 16.97 seconds
+2025-08-21 23:15:42,758 - __main__ - INFO - Starting OpenAI request...
+2025-08-21 23:15:42,758 - __main__ - INFO - Loading system prompt from file
+2025-08-21 23:16:03,440 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-08-21 23:16:03,442 - __main__ - INFO - OpenAI request completed in 20.68 seconds
+2025-08-21 23:16:03,445 - __main__ - INFO - Data saved to: data/image_analysis/idealista_listing_34357924.json

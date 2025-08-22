@@ -1,4 +1,4 @@
 backend/.env
 !backend/.env.example  # Keep .env.example in git
 
-backend/archive
+backend/archive/data

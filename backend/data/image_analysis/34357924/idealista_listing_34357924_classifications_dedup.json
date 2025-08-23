@@ -1,0 +1,202 @@
+{
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9a/c2/be/290881862.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 10,
+      "overall_condition": 3.0,
+      "appliances_condition": 1.0,
+      "plumbing_condition": 0.0,
+      "electrical_condition": 2.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The bedroom is relatively small, approximately 10m2. The overall condition is fair but shows signs of wear. The furniture is dated and cluttered, particularly the wardrobe with items stored on top, which may benefit from better storage solutions. The bed and bedding appear clean but the metal frame could be modernized. Electrical condition is moderate; TV and visible cables from the mounted TV are exposed and need organizing or concealing for safety and aesthetics. There are no visible plumbing features in the room. Flooring consists of wood parquet that appears worn in some spots but generally intact. Ceiling and walls have minor discoloration and could benefit from a fresh coat of paint to brighten and modernize the space. There is one window visible with moderate condition; window frame and glass should be checked for drafts or damage. Overall, remodeling should focus on decluttering, updating electrical elements and furniture, repainting, and possibly improving window insulation."
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c0/5f/39/290881863.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 8,
+      "overall_condition": 3.0,
+      "appliances_condition": 0.0,
+      "plumbing_condition": 0.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 1,
+      "detailed_notes": "The room appears generally functional but shows signs of wear and dated interior style. The bed and furniture seem in decent condition but could be modernized. No appliances or plumbing fixtures are present, so those ratings are zero. The flooring shows some wear but is intact, potentially could benefit from sanding and refinishing. The ceiling and walls are generally fine but could benefit from repainting for a fresher look. The single window and door provide good natural light and appear in good condition, though the curtain and rod could be updated. Electrical outlets and fixtures seem adequate but might need inspection for full safety and improvement of lighting. Overall, this room would benefit from cosmetic upgrading and modernization for improved aesthetics and comfort."
+    },
+    {
+      "division_id": "bedroom_3",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/be/2c/80/290881864.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 12,
+      "overall_condition": 3.0,
+      "appliances_condition": 1.0,
+      "plumbing_condition": 0.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The room is a bedroom with traditional wooden furniture in moderate condition. The television and any other electronic appliances appear old or non-integrated. No visible plumbing fixtures present. The electrical components such as the ceiling light look functional but dated and could be upgraded. The wooden parquet flooring shows signs of wear and could benefit from refinishing. The ceiling has minor imperfections but no major damage. The walls and painting appear slightly aged and could use a fresh coat of paint to brighten the space. The window is single with standard curtains that could be replaced to allow better light control and modern aesthetics. Overall, the room would benefit from updating fixtures, refreshing paint, refinishing floors, and modernizing electrical elements for improved comfort and style."
+    }
+  ],
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b5/ae/e9/290881869.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 20,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 0.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 2,
+      "detailed_notes": "The living room is moderately maintained with traditional decor and furnishings. The flooring and ceiling appear intact but may benefit from modernization and refinishing. Walls have an orange-painted accent wall with some wear; repainting is suggested for a fresh, updated look. The electrical fittings such as lamps and light fixtures work but could be upgraded for aesthetic and energy efficiency improvements. No visible plumbing elements in the living room to assess. Windows are large and provide good natural light, with curtains in decent condition but potentially replaceable for better styling and privacy. Furniture pieces and appliances like the TV and the electric fireplace are functional but dated, suggesting a possible upgrade. Overall, a moderate remodel focused on modernization and refreshing the ambiance is recommended."
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/76/0b/99/290881816.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 2,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 2.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The bathroom is small, approximately 2.5 m2. The fixtures including toilet and bidet appear functional but slightly dated; consider updating for modern efficiency and aesthetics. Plumbing connections visible under the cistern and bidet need checking for potential leaks or corrosion. Floor tiles are in good condition with minimal wear. Walls have ceramic tiling halfway up, which is in decent shape, but the painted upper walls and ceiling show discoloration and some uneven texture, suggesting repainting or repair. The small high window appears intact but may not provide sufficient ventilation; upgrading the window or adding a ventilation system could be beneficial. Electrical outlets and lighting are not clearly visible but should be inspected for compliance and safety. Overall, the room could benefit from cosmetic updates and minor repairs to enhance functionality and appearance."
+    },
+    {
+      "division_id": "bathroom_2",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/93/98/290881877.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 4,
+      "overall_condition": 2.0,
+      "appliances_condition": 2.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 2.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 2.0,
+      "windows_condition": 1.0,
+      "windows_number": 1,
+      "detailed_notes": "The bathroom is small, approximately 3.5 m2. The overall condition is fair but outdated and crowded. The sink cabinet shows aging and some wear, needing replacement or refurbishment. The bathtub with shower curtain also appears dated and the curtain is stained in places, suggesting replacement. Plumbing fixtures like the faucet seem functional but old, may benefit from upgrading to modern fittings. Electrical elements such as lighting above the mirror appear adequate but should be checked for safety compliance due to age. Floor tiles are old and stained, recommending replacement with modern, water-resistant flooring. The ceiling looks intact but painting is uneven and the bright blue wall paint is peeling in spots. Wall tiles are partially covered but visible parts seem stained or discolored, so retiling or repainting is suggested. There is one small window that is dirty or fogged, potentially sealed improperly, impacting ventilation and natural light; replacement or professional cleaning is recommended. Overall, the bathroom needs a modernization overhaul focused on fixtures, flooring, wall and ceiling repainting, and improved ventilation."
+    },
+    {
+      "division_id": "bathroom_3",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/07/34/ab/290881878.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 2,
+      "overall_condition": 2.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 2.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 2.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The bathroom is small with an estimated size of about 2.5 m2. The overall condition is poor to fair and would benefit from remodeling. The toilet and bidet appear functional but outdated and some plumbing pipes are visible and could be modernized. The sink and faucet show signs of wear, and the countertop might need replacement for aesthetic upgrade. The walls are half-tiled with plain white tiles which show signs of discoloration and staining and the upper painted walls have yellowed and need repainting. The floor tiles are dark but dirty or stained, likely needing replacement or deep cleaning. The ceiling appears intact but could be updated with better paint or finish. Electrical outlets and lighting are not clearly visible but seem minimal and might require improvement to modern standards and safety. There is a small high window which provides some natural light; window frame condition appears okay but should be inspected for sealing and insulation. Consider replacing all fixtures, retiling the walls and floors, repainting, and updating plumbing and electrical systems for a modern, fresh bathroom look."
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/06/57/f4/290881833.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The kitchen is narrow and appears functional but dated. Cabinets, counters, and appliances show wear and would benefit from modernizing to improve aesthetics and efficiency. The gas stove and oven may need checks or upgrades considering age. Plumbing pipes are visible and could be concealed or replaced for better visual and functional quality. Electrical elements such as lighting and outlets seem sufficient but basic; consider upgrading for energy efficiency and style. Flooring is consistent but shows signs of age; replacement with modern flooring could refresh the space. The ceiling has a textured finish that looks slightly outdated. Wall paint and tiling are bright but somewhat cluttered; repainting with a lighter, neutral color could enhance light perception and cleanliness. The single window provides natural light and should be inspected for sealing and operability. Overall, a modest remodel focusing on cabinetry, appliances, and paint would significantly improve this kitchen's functionality and look."
+    }
+  ],
+  "general": [
+    {
+      "division_id": "general_1",
+      "room_type": "general",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/db/57/39/290881859.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 10,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 4.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 1,
+      "detailed_notes": "The image shows a room divided into a dining area and a kitchen area. The dining room is in moderate condition with older style furniture and wall decorations. The kitchen area has a refrigerator visible with many magnets and a table with chairs. Flooring is different between the dining and kitchen areas, tile in kitchen and wood in dining. Ceilings look intact but dated. Walls have some wear and could benefit from repainting for modernization. Electrical elements such as lighting fixtures and outlets appear functional but aged. Plumbing fixtures are mostly out of view but visible faucet and pipes seem functional. Windows appear intact with no visible damage and natural light is present. General remodeling should focus on updating flooring to a consistent modern style, refreshing paint, updating kitchen appliances and cabinets, improving lighting fixtures, and possibly modernizing wall decor."
+    },
+    {
+      "division_id": "general_2",
+      "room_type": "general",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c7/48/db/290881861.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 4.0,
+      "appliances_condition": 4.0,
+      "plumbing_condition": 0.0,
+      "electrical_condition": 4.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 5.0,
+      "painting_condition": 4.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "This appears to be a hallway or elevator lobby area, not a typical living space like a kitchen, bathroom, or bedroom. The elevator doors and control panel are in good condition but might benefit from modernization for aesthetic upgrade. Flooring tiles and walls are well-maintained but could use cleaning or minor touch-ups. The ceiling is in excellent condition. There are no visible plumbing fixtures or traditional windows in this small space; natural light seems limited to the door with mailboxes, which is not a conventional window. Electrical outlets and lighting are adequate but could be checked for modernization. The plant adds a nice touch but does not affect structural conditions. No major work needed apart from potential modernization of the elevator system and a fresh paint coat to brighten the area."
+    }
+  ]
+}

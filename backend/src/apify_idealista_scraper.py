@@ -257,7 +257,7 @@ if __name__ == "__main__":
     
     # Example URLs for testing
     test_urls = [
-        "https://www.idealista.pt/imovel/34429798/",
+        "https://www.idealista.pt/imovel/34219509/",
     ]
     
     # Single URL mode

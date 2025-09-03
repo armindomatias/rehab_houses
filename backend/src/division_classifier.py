@@ -230,6 +230,7 @@ class DivisionClassifier:
 
         aggregated: Dict[str, List[Dict[str, Any]]] = {}
         completed = 0
+        # Loop over tasks returning something if completed the previous task and then do other tasks such as saving data so no data is lost if something breaks (while other non completed are doing as well)
         for coro in asyncio.as_completed(tasks):
             result = await coro
             completed += 1

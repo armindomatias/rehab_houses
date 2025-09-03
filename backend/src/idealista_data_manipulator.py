@@ -59,12 +59,12 @@ class IdealistaDataManipulator:
         else:
             raise KeyError("Unexpected JSON structure: expected list or dict")
     
-    def extract_gallery_urls(self) -> List[str]:
+    def extract_gallery_urls(self) -> List[Dict[str, str]]:
         """
-        Extract all image URLs from the 'gallery' section.
+        Extract all image URLs and descriptions from the 'gallery' section.
         
         Returns:
-            List[str]: List of image URLs from the gallery
+            List[Dict[str, str]]: List of dictionaries containing 'url' and 'description' for each image
             
         Raises:
             KeyError: If the 'gallery' key doesn't exist in the JSON
@@ -76,20 +76,24 @@ class IdealistaDataManipulator:
         
         gallery = listing_data['gallery']
         
-        # Extract URLs from gallery items
-        urls = []
+        # Extract URLs and descriptions from gallery items
+        gallery_items = []
         for item in gallery:
             if isinstance(item, dict) and 'url' in item:
-                urls.append(item['url'])
+                gallery_item = {
+                    'url': item['url'],
+                    'description': item.get('description', '')  # Use empty string if no description
+                }
+                gallery_items.append(gallery_item)
         
-        return urls
+        return gallery_items
     
-    def extract_gallery_urls_safe(self) -> Optional[List[str]]:
+    def extract_gallery_urls_safe(self) -> Optional[List[Dict[str, str]]]:
         """
         Safe version of extract_gallery_urls that returns None instead of raising exceptions.
         
         Returns:
-            Optional[List[str]]: List of image URLs from the gallery, or None if an error occurs
+            Optional[List[Dict[str, str]]]: List of dictionaries containing 'url' and 'description' for each image, or None if an error occurs
         """
         try:
             return self.extract_gallery_urls()
@@ -183,18 +187,21 @@ if __name__ == "__main__":
         
         # Test gallery extraction
         print("2. Gallery extraction:")
-        urls = manipulator.extract_gallery_urls()
-        print(f"   ✓ Successfully extracted {len(urls)} image URLs")
-        print(f"   First URL: {urls[0]}")
-        print(f"   Last URL: {urls[-1]}")
+        gallery_items = manipulator.extract_gallery_urls()
+        print(f"   ✓ Successfully extracted {len(gallery_items)} image items")
+        print(f"   First item - URL: {gallery_items[0]['url']}")
+        print(f"   First item - Description: {gallery_items[0]['description']}")
+        print(f"   Last item - URL: {gallery_items[-1]['url']}")
+        print(f"   Last item - Description: {gallery_items[-1]['description']}")
         
         print()
         
         # Test safe extraction
         print("3. Safe gallery extraction:")
-        urls_safe = manipulator.extract_gallery_urls_safe()
-        if urls_safe:
-            print(f"   ✓ Safe extraction successful: {len(urls_safe)} URLs")
+        gallery_items_safe = manipulator.extract_gallery_urls_safe()
+        if gallery_items_safe:
+            print(f"   ✓ Safe extraction successful: {len(gallery_items_safe)} items")
+            print(f"   Sample item: {gallery_items_safe[0]}")
         else:
             print("   ✗ Safe extraction failed")
             

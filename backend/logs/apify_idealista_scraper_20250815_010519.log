@@ -1,6 +1,0 @@
-2025-08-15 01:05:19,851 - src.apify_idealista_scraper - INFO - Loading environment variables...
-2025-08-15 01:05:19,852 - src.apify_idealista_scraper - INFO - APIFY_USER_ID loaded successfully
-2025-08-15 01:05:19,852 - src.apify_idealista_scraper - INFO - APIFY_API_TOKEN loaded successfully
-2025-08-15 01:05:19,852 - src.apify_idealista_scraper - INFO - APIFY_ACTOR_ID loaded successfully: dz_omar~idealista-scraper-api
-2025-08-15 01:05:25,034 - src.apify_idealista_scraper - INFO - Starting Apify scraper for URL: 
-2025-08-15 01:05:25,035 - src.apify_idealista_scraper - ERROR - No URL provided for scraping

@@ -22,18 +22,18 @@ class Deduplication:
     def _setup_logging(self):
         """Setup logging configuration with both file and console handlers"""
         # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
+        #os.makedirs('logs', exist_ok=True)
         
         # Create a timestamp for the log file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = f"logs/deduplication_{timestamp}.log"
+        #log_filename = f"logs/deduplication_{timestamp}.log"
         
         # Configure logging
         logging.basicConfig(
             level=logging.INFO,
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
             handlers=[
-                logging.FileHandler(log_filename),
+                #logging.FileHandler(log_filename),
                 logging.StreamHandler()
             ]
         )
@@ -63,7 +63,7 @@ class Deduplication:
         self,
         items: List[Dict[str, Any]],
         order_map: Dict[str, int],
-        distance_threshold: int = 12,
+        distance_threshold: int = 15,  # Balanced threshold for room clustering
     ) -> List[List[Dict[str, Any]]]:
         """Greedy clustering by gallery order, starting a new cluster when pHash differs beyond threshold."""
         # Precompute hashes and order
@@ -86,9 +86,10 @@ class Deduplication:
 
         def distance(a: Optional[imagehash.ImageHash], b: Optional[imagehash.ImageHash]) -> int:
             if a is None or b is None:
-                return distance_threshold  # force split when hashes missing
+                return distance_threshold + 1  # force split when hashes missing
             return a - b
 
+        # First pass: group by very similar images (likely same room, same angle)
         for e in enriched:
             if not current:
                 current = [e]
@@ -106,8 +107,42 @@ class Deduplication:
         if current:
             clusters.append(current)
 
+        # Second pass: merge clusters that are likely the same room
+        # This helps when images of the same room are taken from very different angles
+        merged_clusters = []
+        used = set()
+        
+        for i, cluster1 in enumerate(clusters):
+            if i in used:
+                continue
+                
+            merged = cluster1.copy()
+            used.add(i)
+            
+            # Look for other clusters that might be the same room
+            for j, cluster2 in enumerate(clusters[i+1:], i+1):
+                if j in used:
+                    continue
+                    
+                # Check if any image in cluster2 is similar to any image in merged
+                should_merge = False
+                for item1 in merged:
+                    for item2 in cluster2:
+                        if (item1["phash"] and item2["phash"] and 
+                            distance(item1["phash"], item2["phash"]) <= distance_threshold * 1.5):
+                            should_merge = True
+                            break
+                    if should_merge:
+                        break
+                
+                if should_merge:
+                    merged.extend(cluster2)
+                    used.add(j)
+            
+            merged_clusters.append(merged)
+
         # Convert back to list of raw items
-        return [[ee["item"] for ee in c] for c in clusters]
+        return [[ee["item"] for ee in c] for c in merged_clusters]
 
     def _aggregate_numeric_fields(self, items: List[Dict[str, Any]]) -> Dict[str, Any]:
         numeric_keys = [
@@ -155,6 +190,7 @@ class Deduplication:
         self,
         aggregated_input_path: str,
         listing_json_path: str,
+        listing_id: str,
         output_filename: Optional[str] = None,
         distance_threshold: int = 12,
     ) -> str:
@@ -191,28 +227,61 @@ class Deduplication:
             except (IndexError, TypeError):
                 return None
 
-        # Extract with error handling
-        expected_bedrooms = _extract_number(_safe_get(property_specs, 1))
-        expected_bathrooms = _extract_number(_safe_get(property_specs, 2))
+        # Extract with error handling and better Portuguese text parsing
+        expected_bedrooms = None
+        expected_bathrooms = None
+        
+        for i, spec in enumerate(property_specs):
+            spec_text = str(spec).lower()
+            if 't3' in spec_text or 't2' in spec_text or 't1' in spec_text:
+                # Extract number from T3, T2, T1 format
+                match = re.search(r't(\d+)', spec_text)
+                if match:
+                    expected_bedrooms = int(match.group(1))
+            elif 'quarto' in spec_text or 'bedroom' in spec_text:
+                # Extract number from "X quartos" format
+                match = re.search(r'(\d+)\s*quarto', spec_text)
+                if match:
+                    expected_bedrooms = int(match.group(1))
+            elif 'casa de banho' in spec_text or 'bathroom' in spec_text:
+                # Extract number from "X casas de banho" format
+                match = re.search(r'(\d+)\s*casa de banho', spec_text)
+                if match:
+                    expected_bathrooms = int(match.group(1))
+            elif 'banho' in spec_text:
+                # Extract number from "X banhos" format
+                match = re.search(r'(\d+)\s*banho', spec_text)
+                if match:
+                    expected_bathrooms = int(match.group(1))
 
         result: Dict[str, List[Dict[str, Any]]] = {}
         for room_type, items in aggregated.items():
+            self.logger.info(f"Processing {room_type}: {len(items)} images")
+            
             # Cluster within room_type
             clusters = self._cluster_by_phash_and_sequence(items, order_map, distance_threshold)
+            self.logger.info(f"  Created {len(clusters)} initial clusters")
 
             # Optionally cap number of clusters based on expected counts
             cap = None
             if room_type in ("bedroom", "bedrooms", "room", "quarto") and isinstance(expected_bedrooms, int):
                 cap = expected_bedrooms
+                self.logger.info(f"  Capping bedrooms to {cap} (expected: {expected_bedrooms})")
             elif room_type in ("bathroom", "bath", "casa_de_banho") and isinstance(expected_bathrooms, int):
                 cap = expected_bathrooms
+                self.logger.info(f"  Capping bathrooms to {cap} (expected: {expected_bathrooms})")
             elif room_type in ("kitchen", "living_room"):
                 cap = 1
+                self.logger.info(f"  Capping {room_type} to {cap}")
 
             if cap is not None and len(clusters) > cap:
-                # Keep the largest clusters first
+                # Keep the largest clusters first (most images = most representative)
                 clusters.sort(key=lambda c: len(c), reverse=True)
+                original_count = len(clusters)
                 clusters = clusters[:cap]
+                self.logger.info(f"  Reduced from {original_count} to {len(clusters)} clusters")
+            else:
+                self.logger.info(f"  No capping applied, keeping {len(clusters)} clusters")
 
             # Build aggregated entries per cluster
             dedup_entries: List[Dict[str, Any]] = []
@@ -240,15 +309,18 @@ class Deduplication:
                     "detailed_notes": notes,
                 }
                 dedup_entries.append(entry)
+                self.logger.info(f"    Cluster {idx}: {len(cluster_items)} images -> {len(images)} unique URLs")
 
             result[room_type] = dedup_entries
 
         # Save
-        os.makedirs("data/image_analysis", exist_ok=True)
+        listing_folder = os.path.join("data", "image_analysis", listing_id)
+        os.makedirs(listing_folder, exist_ok=True)
+        
         if not output_filename:
             base_name = os.path.splitext(os.path.basename(aggregated_input_path))[0]
             output_filename = f"{base_name}_dedup.json"
-        out_path = os.path.join("data", "image_analysis", output_filename)
+        out_path = os.path.join(listing_folder, output_filename)
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
         self.logger.info(f"Deduplicated per-division results saved to: {out_path}")
@@ -258,12 +330,13 @@ if __name__ == "__main__":
 
     deduplication = Deduplication()
 
-    listing_number = "34082358"
+    listing_number = "34219509"
 
     dedup_out = deduplication.deduplicate_aggregated_results(
-        aggregated_input_path=f"data/image_analysis/idealista_listing_{listing_number}_classifications_aggregated.json",
+        aggregated_input_path=f"data/image_analysis/{listing_number}/idealista_listing_{listing_number}_classifications_aggregated.json",
         listing_json_path=f"data/scraped_data/idealista_listing_{listing_number}.json",
+        listing_id=listing_number,
         output_filename=f"idealista_listing_{listing_number}_classifications_dedup.json",
-        distance_threshold=12,  # lower = stricter clustering; 10–14 is a good range
+        distance_threshold=15,  # Balanced threshold for room clustering; 12-18 is a good range
     )
     print(dedup_out)

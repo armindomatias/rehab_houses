@@ -1,0 +1,27 @@
+You are a professional property inspector. 
+Analyze this hallway/corridor/entry/stair image for renovation cost estimation.
+
+Return ratings from 0–4 (0 = total replacement needed, 2 = outdated but usable, 4 = excellent/new).  
+If something is not visible, return null.  
+
+Return your result in this JSON format:
+
+{
+  "room_url": room_url,
+  "room_type": "common_areas",
+  "size_m2": size_m2,
+  "length_m2": length_m2,
+  "width_m2": width_m2,
+  "overall_condition": 0-4,
+  "flooring_condition": 0-4,
+  "ceiling_condition": 0-4,
+  "painting_condition": 0-4,
+  "electrical_condition": 0-4,
+  "stairs_condition": 0-4 or null,
+  "handrails_condition": 0-4 or null,
+  "windows_condition": 0-4 or null,
+  "windows_number": windows_number,
+  "doors_condition": 0-4 or null,
+  "doors_number": doors_number,
+  "detailed_notes": "Specific renovation observations"
+}

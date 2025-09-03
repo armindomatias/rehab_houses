@@ -17,7 +17,10 @@ from typing import List, Dict, Any, Optional
 import re
 import requests
 
-from idealista_data_manipulator import IdealistaDataManipulator
+try:
+    from src.idealista_data_manipulator import IdealistaDataManipulator
+except ImportError:
+    from idealista_data_manipulator import IdealistaDataManipulator
 
 class DivisionClassifier:
     
@@ -35,18 +38,18 @@ class DivisionClassifier:
     def _setup_logging(self):
         """Setup logging configuration with both file and console handlers"""
         # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
+        #os.makedirs('logs', exist_ok=True)
         
         # Create a timestamp for the log file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = f"logs/division_classifier_{timestamp}.log"
+        #log_filename = f"logs/division_classifier_{timestamp}.log"
         
         # Configure logging
         logging.basicConfig(
             level=logging.INFO,
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
             handlers=[
-                logging.FileHandler(log_filename),
+                #logging.FileHandler(log_filename),
                 logging.StreamHandler()
             ]
         )
@@ -78,17 +81,19 @@ class DivisionClassifier:
             raise
 
     # Request the classification of one image (sync)
-    def request_classification(self, image_urls: list):
-        """Request a vision classification per division using idealista urls (sync).
+    def request_classification(self, gallery_items: list):
+        """Request a vision classification per division using idealista gallery items (sync).
 
-        NOTE: This method keeps the original signature but only uses the first image URL.
+        NOTE: This method keeps the original signature but only uses the first gallery item.
         Prefer using classify_images_concurrently for batches.
         """
 
-        if not image_urls:
-            raise ValueError("image_urls must contain at least one URL")
+        if not gallery_items:
+            raise ValueError("gallery_items must contain at least one item")
 
-        image_url = image_urls[0]
+        gallery_item = gallery_items[0]
+        image_url = gallery_item['url']
+        description = gallery_item.get('description', '')
 
         self.logger.info("Starting OpenAI request (sync)...")
         start_time = time.time()
@@ -97,8 +102,9 @@ class DivisionClassifier:
         system_prompt = self._open_prompt()
 
         # Build content so the model echoes room_url in JSON
+        description_text = f"\nImage description (likely in Portuguese from Portugal): {description}" if description else ""
         input_content = [
-            {"type": "input_text", "text": f"room_url: {image_url}\nReturn only the JSON, no prose.\n" + system_prompt},
+            {"type": "input_text", "text": f"room_url: {image_url}{description_text}\nReturn only the JSON, no prose.\n" + system_prompt},
             {"type": "input_image", "image_url": image_url},
         ]
 
@@ -118,11 +124,18 @@ class DivisionClassifier:
             self.logger.error(f"OpenAI request failed after {elapsed_time:.2f} seconds: {str(e)}")
             raise
 
-    async def _classify_one_async(self, image_url: str, model: str, semaphore: asyncio.Semaphore, max_retries: int = 3, backoff_base: float = 1.5) -> Optional[Dict[str, Any]]:
-        """Classify a single image URL using the async client with retries and return parsed JSON."""
+    async def _classify_one_async(self, gallery_item: Dict[str, str], model: str, semaphore: asyncio.Semaphore, max_retries: int = 3, backoff_base: float = 1.5) -> Optional[Dict[str, Any]]:
+        """Classify a single image using the async client with retries and return parsed JSON."""
+        image_url = gallery_item['url']
+        description = gallery_item.get('description', '')
+        
         system_prompt = self._open_prompt()
+        
+        # Include description in the prompt if available to help with classification
+        description_text = f"\nImage description (likely in Portuguese from Portugal): {description}" if description else ""
+        
         input_content = [
-            {"type": "input_text", "text": f"room_url: {image_url}\nReturn only the JSON, no prose.\n" + system_prompt},
+            {"type": "input_text", "text": f"room_url: {image_url}{description_text}\nReturn only the JSON, no prose.\n" + system_prompt},
             {"type": "input_image", "image_url": image_url},
         ]
 
@@ -142,8 +155,10 @@ class DivisionClassifier:
                 parsed = self._parse_json_safely(response.output_text)
                 if parsed is None:
                     raise ValueError("Failed to parse JSON from model output")
-                # Ensure room_url is present
+                # Ensure room_url and description are present
                 parsed.setdefault("room_url", image_url)
+                if description:
+                    parsed.setdefault("image_description", description)
                 return parsed
             except Exception as e:
                 wait_s = backoff_base ** attempt
@@ -173,35 +188,49 @@ class DivisionClassifier:
 
     async def classify_images_concurrently(
         self,
-        image_urls: List[str],
+        gallery_items: List[Dict[str, str]],
+        listing_id: str,
         output_jsonl_filename: Optional[str] = None,
         output_aggregated_filename: Optional[str] = None,
         max_concurrency: int = 5,
         model: str = "gpt-4.1-mini",
     ) -> Dict[str, Any]:
-        """Classify many image URLs concurrently and write results quickly.
+        """Classify many images concurrently and write results quickly.
 
         - Streams results to JSONL as they are produced (one JSON object per line)
         - Builds an aggregated structure keyed by room_type
-        - Returns the aggregated result dict
+        - Each gallery_item should contain 'url' and 'description' keys
+        - Creates a separate folder for each listing
+
+        Args:
+            gallery_items: List of dictionaries with 'url' and 'description' keys
+            listing_id: The listing ID to create a folder for
+            output_jsonl_filename: Optional filename for JSONL output
+            output_aggregated_filename: Optional filename for aggregated JSON output
+            max_concurrency: Maximum number of concurrent requests
+            model: OpenAI model to use for classification
         """
 
-        if not image_urls:
+        if not gallery_items:
             return {}
 
-        os.makedirs("data/image_analysis", exist_ok=True)
+        # Create listing-specific folder
+        listing_folder = os.path.join("data", "image_analysis", listing_id)
+        os.makedirs(listing_folder, exist_ok=True)
+        
         jsonl_path = None
         if output_jsonl_filename:
-            jsonl_path = os.path.join("data", "image_analysis", output_jsonl_filename)
+            jsonl_path = os.path.join(listing_folder, output_jsonl_filename)
             # Truncate/create file
             with open(jsonl_path, "w", encoding="utf-8") as f:
                 f.write("")
 
         semaphore = asyncio.Semaphore(max_concurrency)
-        tasks = [self._classify_one_async(url, model, semaphore) for url in image_urls]
+        tasks = [self._classify_one_async(item, model, semaphore) for item in gallery_items]
 
         aggregated: Dict[str, List[Dict[str, Any]]] = {}
         completed = 0
+        # Loop over tasks returning something if completed the previous task and then do other tasks such as saving data so no data is lost if something breaks (while other non completed are doing as well)
         for coro in asyncio.as_completed(tasks):
             result = await coro
             completed += 1
@@ -215,11 +244,11 @@ class DivisionClassifier:
             room_type = result.get("room_type", "unknown")
             aggregated.setdefault(room_type, []).append(result)
             if completed % 5 == 0:
-                self.logger.info(f"Progress: {completed}/{len(image_urls)} classified")
+                self.logger.info(f"Progress: {completed}/{len(gallery_items)} classified")
 
         # Save aggregated if requested
         if output_aggregated_filename:
-            aggregated_path = os.path.join("data", "image_analysis", output_aggregated_filename)
+            aggregated_path = os.path.join(listing_folder, output_aggregated_filename)
             with open(aggregated_path, "w", encoding="utf-8") as f:
                 json.dump(aggregated, f, indent=2, ensure_ascii=False)
             self.logger.info(f"Aggregated results saved to: {aggregated_path}")
@@ -227,13 +256,14 @@ class DivisionClassifier:
         return aggregated
 
     # Save the classification data
-    def save_classification_data(self, property_data: dict, filename: str):
-        """Save property data to JSON file"""
+    def save_classification_data(self, property_data: dict, listing_id: str, filename: str):
+        """Save property data to JSON file in a listing-specific folder"""
         try:
-            # Create data directory
-            os.makedirs("data/image_analysis", exist_ok=True)
+            # Create listing-specific folder
+            listing_folder = os.path.join("data", "image_analysis", listing_id)
+            os.makedirs(listing_folder, exist_ok=True)
             
-            filepath = f"data/image_analysis/{filename}"
+            filepath = os.path.join(listing_folder, filename)
             
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(property_data, f, indent=2, ensure_ascii=False)
@@ -249,22 +279,25 @@ class DivisionClassifier:
 if __name__ == "__main__":
     division_classifier = DivisionClassifier()
 
-    filename = "idealista_listing_34082358.json"
+    filename = "idealista_listing_34219509.json"
     filepath = f"data/scraped_data/"
 
     manipulator = IdealistaDataManipulator(json_file_path=f"{filepath}{filename}")
 
-    image_urls = manipulator.extract_gallery_urls()
+    gallery_items = manipulator.extract_gallery_urls()
 
     # Derive base name for outputs
     base_name = os.path.splitext(os.path.basename(filename))[0]
+    # Extract listing ID from filename (e.g., "34357924" from "idealista_listing_34357924")
+    listing_id = base_name.replace("idealista_listing_", "")
     jsonl_name = f"{base_name}_classifications.jsonl"
     aggregated_name = f"{base_name}_classifications_aggregated.json"
 
     # Run concurrent classification
     aggregated = asyncio.run(
         division_classifier.classify_images_concurrently(
-            image_urls=image_urls,
+            gallery_items=gallery_items,
+            listing_id=listing_id,
             output_jsonl_filename=jsonl_name,
             output_aggregated_filename=aggregated_name,
             max_concurrency=5,
@@ -274,5 +307,6 @@ if __name__ == "__main__":
     # Also save using existing saver for compatibility
     division_classifier.save_classification_data(
         property_data=aggregated,
+        listing_id=listing_id,
         filename=f"{base_name}_classifications_compact.json",
     )

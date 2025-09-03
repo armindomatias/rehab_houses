@@ -45,18 +45,18 @@ class ApifyIdealistaScraper:
     def _setup_logging(self):
         """Setup logging configuration with both file and console handlers"""
         # Create logs directory if it doesn't exist
-        os.makedirs('logs', exist_ok=True)
+        #os.makedirs('logs', exist_ok=True)
         
         # Create a timestamp for the log file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = f'logs/apify_idealista_scraper_{timestamp}.log'
+        #log_filename = f'logs/apify_idealista_scraper_{timestamp}.log'
         
         # Configure logging
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_filename),
+                #logging.FileHandler(log_filename),
                 logging.StreamHandler()
             ]
         )
@@ -257,7 +257,7 @@ if __name__ == "__main__":
     
     # Example URLs for testing
     test_urls = [
-        "https://www.idealista.pt/imovel/34429798/",
+        "https://www.idealista.pt/imovel/34219509/",
     ]
     
     # Single URL mode

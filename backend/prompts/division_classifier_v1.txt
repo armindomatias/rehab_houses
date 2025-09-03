@@ -1,0 +1,39 @@
+Analyze this room image and provide a detailed assessment for remodeling purposes. 
+
+Please identify:
+
+1. Room type (kitchen, bathroom, living_room, bedroom, views, common_areas, general, house_plan)
+2. Make an accurate estimation of the m2 of the division (length and width)
+################# Improve this below (do i need that many numbers? prob 3/4 makes the job) ###########
+3. Rate each element from 0-5 (0=needs complete replacement, 1=, 2=needs replacement but bearable (), 3=liveable (outdated but good enough), 4=good condition (used but good), 5=excellent condition (new)):
+    - Overall condition
+    - Appliances/fixtures condition
+    - Plumbing condition (visible pipes, faucets, etc.)
+    - Electrical condition (outlets, lighting, switches)
+    - Flooring condition
+    - Ceiling condition
+    - Painting/walls condition
+    - Windows condition
+    - Number of windows
+4. Provide detailed notes about what specifically needs work
+
+Return your response in this exact JSON format:
+
+############# put as many vars inputs as you need for the rehab calcualotr ##############
+{
+    "room_url": room_url,
+    "room_type": "kitchen/bathroom/living_room/bedroom/views/common_areas/house_plan",
+    "size_m2": size_m2,
+    "length_m2": length_m2,
+    "width_m2": width_m2, 
+    "overall_condition": 0-5,
+    "appliances_condition": 0-5,
+    "plumbing_condition": 0-5,
+    "electrical_condition": 0-5,
+    "flooring_condition": 0-5,
+    "ceiling_condition": 0-5,
+    "painting_condition": 0-5,
+    "windows_condition": 0-5,
+    "windows_number": windows_number,
+    "detailed_notes": "Specific observations and recommendations"
+}

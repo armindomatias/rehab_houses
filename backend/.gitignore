@@ -1,0 +1,4 @@
+.env
+.env.example  # Keep .env.example in git
+
+archive/data

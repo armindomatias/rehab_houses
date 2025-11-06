@@ -1,0 +1,130 @@
+frontend/
+│── index.html
+│── package.json
+│── vite.config.ts
+│── tailwind.config.ts
+│── postcss.config.js
+│
+└── src/
+    │── main.tsx          # Entry point
+    │── index.css         # Tailwind imports
+    │── App.tsx           # Defines routes
+    │── vite-env.d.ts
+    │
+    ├── components/       # Reusable UI parts
+    │   ├── Navbar.tsx
+    │   ├── HouseCard.tsx
+    │   ├── LoadingSpinner.tsx
+    │
+    ├── pages/            # Full pages/screens
+    │   ├── Home.tsx      # Input form (Idealista link)
+    │   ├── Report.tsx    # After analysis results
+    │
+    ├── services/         # API calls to Python backend
+    │   └── api.ts
+
+
+-----------------------
+
+## **Frontend Folder Structure Analysis**
+
+This is a modern **React + TypeScript + Vite** web application for a housing analysis project. Here's how everything connects:
+
+### **📦 Core Configuration Files**
+
+**`package.json`** - The project's heart
+- Defines dependencies: React 19, React Router DOM, Tailwind CSS
+- Sets up build scripts (`dev`, `build`, `lint`, `preview`)
+- Configures the project as an ES module
+
+**`vite.config.ts`** - Build tool configuration
+- Configures Vite bundler with React plugin
+- Enables fast development server and hot module replacement (HMR)
+
+### **🔧 TypeScript Configuration**
+
+**`tsconfig.json`** - Master TypeScript config
+- References two specialized configs for separation of concerns
+
+**`tsconfig.app.json`** - Application-specific TypeScript settings
+- Configured for React JSX compilation
+- Targets modern ES2022 with strict type checking
+- Only includes the `src/` folder
+
+**`tsconfig.node.json`** - Node.js tooling configuration  
+- Separate config for build tools (Vite config)
+- Targets ES2023 for better Node.js compatibility
+
+### **🎨 Styling & Processing**
+
+**`tailwind.config.js`** - Utility-first CSS framework
+- Scans all HTML/React files for CSS classes
+- Connected to all `.tsx/.jsx` files in `src/`
+
+**`postcss.config.js`** - CSS processing pipeline
+- Integrates Tailwind CSS and Autoprefixer
+- Processes CSS during build
+
+### **✅ Code Quality**
+
+**`eslint.config.js`** - Code linting and quality
+- Enforces TypeScript best practices
+- Includes React Hooks and React Refresh rules
+- Ignores `dist/` build folder
+
+### **🚀 Application Entry Point**
+
+**`index.html`** - Web app entry point
+- References `/src/main.tsx` as the JavaScript entry
+- Contains the root div where React mounts
+
+### **📁 Source Code Structure (`src/`)**
+
+**`main.tsx`** - React application bootstrap
+- Mounts the app to the DOM
+- Wraps app with React Router for navigation
+- Imports global styles from `index.css`
+
+**`App.tsx`** - Main application component
+- Sets up routing with Home and Report pages
+- Includes navigation bar
+- Uses Tailwind classes for styling
+
+**`components/`** - Reusable UI components
+- `HouseCard.tsx` - Property display cards
+- `LoadingSpinner.tsx` - Loading state indicator  
+- `Navbar.tsx` - Navigation component
+
+**`pages/`** - Route-specific page components
+- `Home.tsx` - Landing page
+- `Report.tsx` - Analysis/report page
+
+**`services/`** - External integrations
+- `api.ts` - Backend API communication layer
+
+**`assets/`** - Static resources
+- `react.svg` - React logo
+
+**Style files:**
+- `index.css` - Global styles and Tailwind imports
+- `App.css` - Component-specific styles
+
+### **🔄 How Everything Interconnects**
+
+1. **Build Pipeline**: `vite.config.ts` → `tsconfig.*.json` → `postcss.config.js` → `tailwind.config.js`
+
+2. **Application Flow**: `index.html` → `main.tsx` → `App.tsx` → `pages/` → `components/`
+
+3. **Styling**: `tailwind.config.js` processes CSS classes → `postcss.config.js` optimizes → bundled into final CSS
+
+4. **Development**: Vite dev server watches for changes → TypeScript compilation → ESLint checking → Hot reload
+
+5. **Routing**: React Router DOM enables navigation between Home and Report pages
+
+### **📦 Build Artifacts**
+
+**`dist/`** - Production build output (generated)
+**`node_modules/`** - Dependencies (managed by npm)
+**`package-lock.json`** - Exact dependency versions for reproducible builds
+
+This setup provides a modern, efficient development environment with hot reloading, type safety, code quality enforcement, and optimized production builds for your housing analysis application.

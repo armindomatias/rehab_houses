@@ -2,3 +2,10 @@
 .env.example  # Keep .env.example in git
 
 archive/data
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python

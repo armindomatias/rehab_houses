@@ -330,7 +330,7 @@ if __name__ == "__main__":
 
     deduplication = Deduplication()
 
-    listing_number = "34219509"
+    listing_number = "34458598"
 
     dedup_out = deduplication.deduplicate_aggregated_results(
         aggregated_input_path=f"data/image_analysis/{listing_number}/idealista_listing_{listing_number}_classifications_aggregated.json",

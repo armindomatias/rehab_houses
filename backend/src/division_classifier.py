@@ -279,7 +279,7 @@ class DivisionClassifier:
 if __name__ == "__main__":
     division_classifier = DivisionClassifier()
 
-    filename = "idealista_listing_34219509.json"
+    filename = "idealista_listing_34458598.json"
     filepath = f"data/scraped_data/"
 
     manipulator = IdealistaDataManipulator(json_file_path=f"{filepath}{filename}")

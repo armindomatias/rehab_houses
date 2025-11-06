@@ -210,6 +210,7 @@ class ApifyIdealistaScraper:
         # Data/Payload: Specific stuff you pass depending on the Actor/API
         payload = json.dumps({
             "Url": url_listing, # Listing to extract 
+            "cookies": {},
             "proxyConfig": {
                 "useApifyProxy": True,
                 "apifyProxyGroups": ["RESIDENTIAL"]
@@ -257,7 +258,7 @@ if __name__ == "__main__":
     
     # Example URLs for testing
     test_urls = [
-        "https://www.idealista.pt/imovel/34219509/",
+        "https://www.idealista.pt/imovel/34458598/",
     ]
     
     # Single URL mode

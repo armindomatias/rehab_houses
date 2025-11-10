@@ -677,8 +677,9 @@ class PropertyRemodelingCalculator:
         
         # Process each room type
         for room_type, divisions in self.classification_data.items():
-            if room_type == "views" or room_type == "house_plan":
-                continue  # Skip views and house plans
+            # Skip views, house plans, and common areas
+            if room_type in ["views", "house_plan", "common_areas"]:
+                continue
             
             for division in divisions:
                 division_id = division.get("division_id", "unknown")

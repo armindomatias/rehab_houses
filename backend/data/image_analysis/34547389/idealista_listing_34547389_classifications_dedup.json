@@ -1,0 +1,343 @@
+{
+  "views": [
+    {
+      "division_id": "views_1",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/3a/10/c7/298217710.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 3,
+      "detailed_notes": "Balcony in generally good condition with solid railings and clean tiles. Some minor dirt and dried plants present which need cleaning. Walls and ceiling are well maintained, but the paint shows slight wear and might benefit from refreshing. Electrical fixtures (wall lamps) appear functional but need inspection for safety. Windows and doors with large glass panels are in good state, offering plenty of natural light and good outdoor views. No immediate structural or plumbing needs detected since this is an outdoor terrace."
+    },
+    {
+      "division_id": "views_2",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e4/1e/b5/298217711.jpg"
+      ],
+      "num_source_images": 1,
+      "detailed_notes": "Image depicts an outdoor terrace with a clear view of surrounding buildings, parking, and landscape beyond. No interior room elements visible to assess size or condition. No renovation evaluation applicable based on this view alone."
+    },
+    {
+      "division_id": "views_3",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/66/1d/de/298217713.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 4,
+      "overall_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 0,
+      "detailed_notes": "Small balcony/terrace area with no visible damage or significant wear. The floor tiles and ceiling are in good condition but showing slight signs of weathering. Walls are painted uniformly, minor staining on the ceiling near the edge could be monitored for moisture. Sliding glass door and frame appear new and well maintained. No visible electrical installations except a light fixture, which seems functional. No plumbing or appliances present. Overall low-cost maintenance recommended, possibly repaint ceiling and walls, inspect for moisture."
+    },
+    {
+      "division_id": "views_4",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ac/99/50/298217714.jpg"
+      ],
+      "num_source_images": 1,
+      "detailed_notes": "The image shows an outdoor view from a building overlooking a street, trees, parked cars, a roundabout, and a distant landscape including a flat area and water body. There are no indoor elements or rooms visible to assess for renovation."
+    },
+    {
+      "division_id": "views_5",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/22/fd/64/298217715.jpg"
+      ],
+      "num_source_images": 1,
+      "detailed_notes": "Image depicts the exterior view of a residential building with parked cars and a clear blue sky. No interior space or room details are visible for renovation assessment."
+    },
+    {
+      "division_id": "views_6",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/a5/63/54/298217716.jpg"
+      ],
+      "num_source_images": 1,
+      "detailed_notes": "The image shows the exterior facade of a residential building with balconies and multiple windows, focusing on the view rather than an interior space. No interior room or renovation elements are visible to assess."
+    }
+  ],
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/27/2d/50/298217691.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/77/34/2f/298217696.jpg"
+      ],
+      "num_source_images": 2,
+      "size_m2": 18,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.5,
+      "ceiling_condition": 3.5,
+      "painting_condition": 3.0,
+      "windows_condition": 2.5,
+      "windows_number": 1,
+      "detailed_notes": "The living room is spacious with good natural light and solid hardwood furniture. Flooring and ceiling are in excellent condition, showing no visible damage. Walls and painting are in good shape but could benefit from a fresh coat to brighten and modernize the space. Windows and door frames appear structurally sound but slightly outdated; replacing or refurbishing could improve insulation and aesthetics. Lighting fixtures are dated but functional; upgrading could add ambiance. No visible electrical issues, though an inspection of outlets and wiring is recommended. No plumbing present in this room. \nThe living room is in generally good condition with a clean ceiling and intact walls. The leather sofas and furniture are in decent shape but show signs of age. The parquet flooring is maintained well but shows minor wear. The window is partially visible and seems older, potentially requiring upgrade or improved sealing. Electrical fixtures like the ceiling lamp appear functional but somewhat outdated. The door looks solid and well-kept. Overall, the room may benefit from minor updates such as repainting, window replacement or refurbishment, and modernization of lighting fixtures to enhance aesthetics and comfort."
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/63/e1/49/298217699.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/18/be/d4/298217701.jpg"
+      ],
+      "num_source_images": 2,
+      "size_m2": 13,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.5,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The room is generally well-maintained with classic wooden furniture in good condition. The flooring is wooden and appears to be in good shape but slightly dated. The ceiling and walls have no visible damage or stains, with only minor touch-ups needed on the painting. The single window visible has standard frames and good condition glass but may benefit from modernization. The door and its frame are solid but could use slight refinishing. Electrical elements like lighting fixtures and visible switches appear functional but slightly outdated. Overall, a moderate renovation to refresh paint, flooring polish, and update fixtures would improve aesthetics and functionality. \nThe bedroom is in good condition with wooden flooring and well-maintained classic furniture. The ceiling and doors are in excellent state. Walls and painting show minor wear and might benefit from repainting. Window appears to be single, in good state but some minor updates might improve insulation. Electrical elements and lighting fixtures are functional but slightly dated. No immediate plumbing needs as it is a bedroom."
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/0c/ca/298217697.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 12,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Room is well furnished and maintained with dated but functional wooden floors, walls, and ceiling. Minor cosmetic updating could improve aesthetic appeal. Electrical fixtures, including ceiling light and outlets, appear functional. Single window with curtains in good condition but might benefit from a modern upgrade. Door and furniture show minor signs of wear but generally in good condition."
+    },
+    {
+      "division_id": "bedroom_3",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0c/e9/58/298217698.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 14,
+      "overall_condition": 3.0,
+      "appliances_condition": 2.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "The bedroom is well-maintained with good natural light and a solid hardwood floor in excellent condition. The ceiling and walls are in generally good shape but show minor signs of aging and could benefit from repainting to freshen up the space. The window and door frames appear structurally sound but the window treatment looks dated and could be updated for aesthetic improvement. Electrical fixtures are functional but slightly outdated. Built-in furniture and light fixtures show signs of wear and could be modernized or refurbished. The adjoining small bathroom area visible should be inspected separately for plumbing and finishes."
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/e2/eb/298217706.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 25,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "The common area has high-quality marble flooring and a well-maintained ceiling. Dark green marble wall cladding looks intact but is somewhat outdated in style. The built-in planters provide a pleasant aesthetic but should be checked for irrigation or watering system maintenance. Lighting fixtures embedded into the ceiling appear modern but need verification for full functionality. There are no visible windows, reducing natural light, and only one door is visible. Minor painting touch-ups recommended for the white painted sections. Electrical outlets and wiring should be inspected as no outlets are clearly visible."
+    },
+    {
+      "division_id": "common_areas_2",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/9e/05/298217707.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 15,
+      "overall_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 4.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "The common area/lobby with elevators is in generally good condition with clean and well-maintained marble or tiled flooring and modern elevator doors. The ceiling has some minor imperfections, possibly from past fixture removal, and recessed lighting is functional but could be updated. Walls are freshly painted with no visible damages. There are no windows visible in this area. The absence of windows is normal for this type of space. No plumbing elements present. Electrical fixtures are in acceptable condition but could benefit from modernization for improved lighting and energy efficiency."
+    },
+    {
+      "division_id": "common_areas_3",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c1/8d/79/298217708.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 4.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 4.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "The corridor is well maintained with excellent flooring and ceiling condition. Walls and paint are clean and fresh. There are no windows in this space. Doors (elevator doors) and fixtures appear functional but somewhat dated. Electrical lighting is adequately installed with recessed ceiling lights. No visible plumbing. Overall minimal renovations needed except for potential lighting updates and minor door polish or replacement depending on style preference."
+    },
+    {
+      "division_id": "common_areas_4",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/6e/cb/298217709.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 4,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 0,
+      "detailed_notes": "The terrace area is in generally good condition with minor signs of wear on the floor tiles which appear serviceable. The paint on the walls is slightly aged and could benefit from refreshing. Ceiling is solid and intact with no visible damage. The sliding door is in good condition but may require minor maintenance to ensure smooth operation. No visible issues with electrical fixtures or wiring. The outdoor area with a grill and seating visible below appears functional and well-maintained. Overall, a minor renovation mostly focused on aesthetic refreshment is recommended."
+    },
+    {
+      "division_id": "common_areas_5",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/6a/6a/ed/298217712.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 5,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 0,
+      "detailed_notes": "The terrace is in good conditions with clean tiling and solid ceiling. The metal railing looks stable but may need a fresh coat of paint to prevent rust. The sliding glass door and window appear well-maintained, but seals should be checked for insulation. The wall paint is generally good but shows minor wear. There are no visible electrical outlets or lighting except an external wall light which seems functional but should be tested. No evident structural issues, but periodic maintenance recommended for exterior exposure."
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ef/57/03/298217693.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 10,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Kitchen appears well maintained with dated but functional cabinetry and granite countertops. Flooring is intact with minor wear. The ceiling and walls are in good condition but could benefit from refreshing paint. The window is operable with a roller shutter; no visible damage. Doors are solid wood, consistent with cabinetry. Plumbing fixtures appear functional with no visible leaks. Electrical fixtures and outlets show no flaws but the lighting fixture is quite basic and could be updated. Appliances like oven, washing machine, microwave, and extractor hood seem operational but older. Consider modernizing cabinetry hardware, lighting, and possibly updating some appliances for better efficiency and style."
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/fb/9a/51/298217703.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 5,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 2.0,
+      "windows_number": 1,
+      "detailed_notes": "The bathroom is in generally good condition but shows signs of aging. The shower enclosure and fixtures appear functional but slightly outdated. The floor tiles are intact with minor wear. Walls and paint are clean but may benefit from a fresh coat to brighten the room. The window is small and may need a check for sealing and ventilation. Plumbing and electrical fixtures seem functional with no visible issues. The vanity and storage cabinets look well maintained but somewhat old-fashioned. Slight modernization of lighting and fittings could improve the room's appearance and function."
+    },
+    {
+      "division_id": "bathroom_2",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/5b/01/298217704.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 2,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "The bathroom is small but functional; tiles and sanitary installations appear in good condition with minor wear. The shower enclosure screen shows some yellowing and may benefit from replacement or deep cleaning. No windows are visible, suggesting limited ventilation which could require installation of an extractor fan if not already present. Overall, the fixtures like toilet, bidet, sink, and cabinetry seem well-maintained but slightly outdated. Painting and ceiling could be refreshed for improved aesthetics."
+    },
+    {
+      "division_id": "bathroom_3",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/ba/e4/298217705.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 5,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "The bathroom appears clean and functional with modern fixtures, but it lacks any windows, which may affect ventilation. Ventilation improvements are recommended. Flooring and tiles are in good condition but somewhat outdated style-wise. Plumbing fixtures show no visible damage but the waterfall tap on the sink may need checking for ease of use. The lack of windows and reliance on artificial lighting could be a drawback for natural light. Painting near ceiling looks slightly aged with minor discoloration. Overall functional but could benefit from aesthetic updates and improved ventilation."
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/d1/d3/61/298217695.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 4.0,
+      "windows_number": 1,
+      "detailed_notes": "The hallway is in generally good condition with polished wooden flooring and well-maintained wooden doors. Walls and ceiling paint appear slightly outdated and may benefit from a fresh coat to brighten the space. The lighting fixture is functional but could be updated for aesthetic improvements. No visible damage or wear is noted in windows or door frames. Electrical outlets and wiring seem properly installed and safe. No plumbing is present in this area."
+    }
+  ]
+}

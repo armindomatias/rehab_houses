@@ -12,12 +12,12 @@ import logging
 from typing import Dict, Any, Optional
 from datetime import datetime
 
-from src.apify_idealista_scraper import ApifyIdealistaScraper
-from src.idealista_data_manipulator import IdealistaDataManipulator
-from src.division_classifier import DivisionClassifier
-from src.deduplication import Deduplication
-from src.rehab_calculator import PropertyRemodelingCalculator
-from src.finance_calculator import PropertyFinanceCalculator
+from src.idealista_scraper.apify_idealista_scraper import ApifyIdealistaScraper
+from src.idealista_scraper.idealista_data_manipulator import IdealistaDataManipulator
+from src.division_classifier.division_classifier import DivisionClassifier
+from src.division_classifier.deduplication import Deduplication
+from src.calculators.rehab_calculator import PropertyRemodelingCalculator
+from src.calculators.finance_calculator import PropertyFinanceCalculator
 
 
 class PropertyAnalysisPipeline:

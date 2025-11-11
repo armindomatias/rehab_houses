@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Rehabify - Property Investment Analysis",
@@ -14,9 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen bg-gray-50 text-gray-900">
+      <body className="min-h-screen bg-neutral-50 text-neutral-800">
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

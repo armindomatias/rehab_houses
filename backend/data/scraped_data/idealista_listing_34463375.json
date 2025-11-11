@@ -1,0 +1,109 @@
+[
+  {
+    "id": "34463375",
+    "Url": "https://www.idealista.pt/en/imovel/34463375/",
+    "title": "T2 flat for sale in Rua Doutor Figueiredo, 1",
+    "price": "390000 €",
+    "description": "T2 in good condition.Built-in wardrobes.Equipped kitchen.Close to banks, supermarkets, and public transport.",
+    "location": "Portas de Benfica - Mercado de Benfica, Benfica",
+    "characteristics": [
+      "65 m² built",
+      "T2",
+      "1 bathroom",
+      "Second hand/good condition"
+    ],
+    "building": [
+      "Ground floor",
+      "No lift"
+    ],
+    "energyPerformance": {},
+    "amenities": [],
+    "energyLabel": null,
+    "updatedAt": "Listing updated 17 hours ago",
+    "MainImage": "https://img4.idealista.pt/blur/WEB_DETAIL_TOP-L-P/90/id.pro.pt.image.master/c5/2f/b1/290286078.jpg",
+    "virtualTourUrl": null,
+    "propertySpecs": {
+      "rooms": 2,
+      "constructedArea": 65,
+      "bathrooms": null,
+      "garden": false,
+      "pool": false,
+      "terrace": false
+    },
+    "contactInfo": {
+      "reference": "34463375",
+      "professionalName": "Figueiredo",
+      "location": null,
+      "logo": null,
+      "agencyWebsite": null,
+      "contactMethods": {
+        "chatAvailable": false,
+        "phoneAvailable": false,
+        "formAvailable": false
+      },
+      "ownerType": "private",
+      "mapLocation": null,
+      "phones": null
+    },
+    "gallery": [
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/c5/2f/b1/290286078.jpg",
+        "title": "Image Living room of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Living room",
+        "tag": "Living room",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/a8/e9/9a/290285935.jpg",
+        "title": "Image Bedroom of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Bedroom",
+        "tag": "Bedroom",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/33/d5/d5/290286057.jpg",
+        "title": "Image Bedroom of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Bedroom",
+        "tag": "Bedroom",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/9f/bb/6f/290285964.jpg",
+        "title": "Image Bedroom of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Bedroom",
+        "tag": "Bedroom",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/59/60/7c/290285934.jpg",
+        "title": "Image Bedroom of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Bedroom",
+        "tag": "Bedroom",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/ce/fa/36/290286079.jpg",
+        "title": "Image Bathroom of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Bathroom",
+        "tag": "Bathroom",
+        "isPlan": false
+      },
+      {
+        "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/da/64/3a/290285981.jpg",
+        "title": "Image Kitchen of t2 flat in Rua Doutor Figueiredo, 1",
+        "description": "Kitchen",
+        "tag": "Kitchen",
+        "isPlan": false
+      }
+    ],
+    "Map": {
+      "src": "https://maps.googleapis.com/maps/api/staticmap?size=720x492&center=38.75188540%2C-9.20651110&maptype=roadmap&channel=map_detail&scale=1&zoom=16&key=AIzaSyDkIsRxmKN7k5hlB3T98N1Z3lVwHzdx4Tk&signature=xVgO_n19j6_fQVlTSxYfmQzKmkE=",
+      "title": "Map of the area",
+      "addressVisibility": "EXACT"
+    },
+    "mapImagePath": "https://api.apify.com/v2/key-value-stores/ilvvPu28sJV5KCdsv/records/34463375.jpg",
+    "datadome": "7lDM31cY2AjVI2FVmnJKJA8oHc7bdPWL7e1OFi1qYiwFLBvDPtGASiJNPDYSnxwPws1SjPaEd1eeItHBcdWwiJcU_feB7yxIiSJz37tKKNZT~nDyw17minipYNr844ct",
+    "scrapedAt": "2025-11-10T19:44:45.286Z",
+    "status": "success"
+  }
+]

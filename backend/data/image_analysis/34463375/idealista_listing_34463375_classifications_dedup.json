@@ -1,0 +1,102 @@
+{
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/a8/e9/9a/290285935.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "appliances_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Room is small and in generally good condition with a few signs of wear. Flooring is wooden and appears well-maintained but may benefit from refinishing. Walls and ceiling are painted white, with some potential minor touch-ups needed. Window has a curtain rod with a sheer curtain, windows seem functional but not new. Door is in usable condition but could be updated for modern aesthetics. Lighting fixture is basic and could be replaced with a more modern fixture for improved lighting and style. No visible electrical or plumbing issues. The room could be improved with some modern updates to enhance appeal."
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/33/d5/d5/290286057.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 6,
+      "overall_condition": 3.0,
+      "appliances_condition": 2.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 4.0,
+      "painting_condition": 4.0,
+      "windows_condition": 0.0,
+      "windows_number": 0,
+      "detailed_notes": "Room appears to be a small bedroom with built-in wooden wardrobes and a wooden floor covered by a carpet. Walls and ceiling are freshly painted and in good condition. The single door looks in good condition. No windows visible in the image; may limit natural light and ventilation, which is a potential concern. Electrical outlets and lighting appear to be standard and functional. Wooden wardrobes seem old with some wear; may need refurbishing or replacement depending on use. Overall minor updates recommended, especially to improve natural lighting or adding windows if possible."
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/ce/fa/36/290286079.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 4,
+      "overall_condition": 2.0,
+      "appliances_condition": 2.0,
+      "plumbing_condition": 2.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 2.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Bathroom appears somewhat outdated but functional. Flooring is old terrazzo-style which shows wear and may require replacement for modern standards. Bathtub, toilet, and sink are older models, working but could be replaced or refurbished. Plumbing fixtures appear original and may need upgrading soon. Walls, ceiling, and paint look clean but dated. Window provides natural light and is in good condition. Light fixtures above mirror and ceiling lights are operational but basic. Door and frame look intact with minor wear."
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/da/64/3a/290285981.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 5,
+      "overall_condition": 2.0,
+      "appliances_condition": 1.0,
+      "plumbing_condition": 3.0,
+      "electrical_condition": 2.0,
+      "flooring_condition": 2.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Small kitchen with dated wooden cabinetry and countertops; refrigerator door open and older style stove suggests appliance replacements are needed. Floor shows wear and may benefit from updating. Ceiling and walls are in reasonable condition but repainting could refresh the space. Electrical outlets visible but may need updating. Window frame appears solid but the glass is frosted, limiting natural light. Plumbing fixtures (sink/faucet) appear functional but old. Suggest kitchen remodel focused on replacing cabinets, appliances, improving lighting, and updating floor for modernization."
+    }
+  ],
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/90/id.pro.pt.image.master/c5/2f/b1/290286078.jpg"
+      ],
+      "num_source_images": 1,
+      "size_m2": 12,
+      "overall_condition": 3.0,
+      "appliances_condition": 2.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Room is generally in good condition with no visible damage. Floors are clean but appear somewhat dated and could be updated for a modern look. Walls and paint are clean but may benefit from a fresh coat. Window and door frames appear functional but not new. Electrical fixtures including ceiling chandelier are older style but operational. Furniture is used and simple, built-in wardrobes are not visible and lighting fixtures could be improved. Recommend minor renovations focused on style updates rather than repairs."
+    }
+  ]
+}

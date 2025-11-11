@@ -8,6 +8,8 @@ import {
   getConditionColor,
   getConditionLabel,
 } from "@/utils/formatters";
+import { Card, CardHeader, CardBody } from "@/components/ui/Card";
+import { MapPin, Building2, BedDouble, Home, Wrench, TrendingUp, TriangleAlert } from "lucide-react";
 
 interface Division {
   division_id: string;
@@ -82,15 +84,15 @@ export default function Report() {
 
   if (loading) {
     return (
-      <div className="p-6 max-w-7xl mx-auto">
-        <div className="text-center">Loading...</div>
+      <div className="p-6 max-w-6xl mx-auto">
+        <div className="text-center text-neutral-600">Loading...</div>
       </div>
     );
   }
 
   if (!data.success) {
     return (
-      <div className="p-6 max-w-7xl mx-auto">
+      <div className="p-6 max-w-6xl mx-auto">
         <h1 className="text-2xl font-bold mb-4">Analysis Report</h1>
         <p className="text-red-600">No analysis data available or analysis failed.</p>
       </div>
@@ -99,139 +101,178 @@ export default function Report() {
 
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold">Property Analysis Report</h1>
-        {data.listing_id && (
-          <span className="text-sm text-gray-500">Listing ID: {data.listing_id}</span>
-        )}
-      </div>
+    <main className="mx-auto max-w-6xl px-4 mt-8">
+      <div className="grid items-start gap-6 md:grid-cols-[1.2fr_1.8fr]">
+        {/* Left Column */}
+        <div className="space-y-6">
+          {/* Property Info Card */}
+          {data.property_info && (
+            <Card>
+              <CardBody className="flex items-start gap-4">
+                <div className="hidden h-28 w-40 flex-none rounded-xl bg-neutral-200 md:block" />
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    {data.property_info.location && (
+                      <span className="inline-flex items-center gap-1 rounded-lg bg-neutral-100 px-2 py-1 text-xs font-medium">
+                        <MapPin className="h-3 w-3" /> {data.property_info.location}
+                      </span>
+                    )}
+                    {data.property_info.size_m2 && (
+                      <span className="inline-flex items-center gap-1 rounded-lg bg-neutral-100 px-2 py-1 text-xs font-medium">
+                        <Building2 className="h-3 w-3" /> {data.property_info.size_m2} m²
+                      </span>
+                    )}
+                    {data.property_info.bedrooms && (
+                      <span className="inline-flex items-center gap-1 rounded-lg bg-neutral-100 px-2 py-1 text-xs font-medium">
+                        <BedDouble className="h-3 w-3" /> {data.property_info.bedrooms} beds
+                      </span>
+                    )}
+                  </div>
+                  <h2 className="mt-2 text-xl font-bold">Idealista Listing</h2>
+                  {data.listing_id && (
+                    <p className="text-xs text-neutral-500">Listing ID: {data.listing_id}</p>
+                  )}
+                </div>
+              </CardBody>
+            </Card>
+          )}
 
-      {/* Property Info */}
-      {data.property_info && (
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Property Information</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {data.property_info.location && (
-              <div>
-                <p className="text-sm text-gray-600">Location</p>
-                <p className="font-medium">{data.property_info.location}</p>
-              </div>
-            )}
-            {data.property_info.size_m2 && (
-              <div>
-                <p className="text-sm text-gray-600">Size</p>
-                <p className="font-medium">{data.property_info.size_m2} m²</p>
-              </div>
-            )}
-            {data.property_info.bedrooms && (
-              <div>
-                <p className="text-sm text-gray-600">Bedrooms</p>
-                <p className="font-medium">{data.property_info.bedrooms}</p>
-              </div>
-            )}
-            {data.property_info.bathrooms && (
-              <div>
-                <p className="text-sm text-gray-600">Bathrooms</p>
-                <p className="font-medium">{data.property_info.bathrooms}</p>
-              </div>
-            )}
-          </div>
+          {/* Risk & Notes Card */}
+          <Card>
+            <CardHeader title="Risk & Notes" icon={<TriangleAlert className="h-4 w-4" />} />
+            <CardBody>
+              <ul className="list-disc pl-5 text-sm text-neutral-700 space-y-1">
+                <li>Check building structure and moisture before heavy scope.</li>
+                <li>Energy efficiency upgrades may unlock higher rent and lower bills.</li>
+                <li>Verify condominium fees (HOA) and IMI for net yield accuracy.</li>
+              </ul>
+            </CardBody>
+          </Card>
         </div>
-      )}
 
-      {/* Investment Summary */}
-      {data.investment && (
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Investment Summary</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <p className="text-sm text-gray-600">Purchase Price</p>
-              <p className="text-2xl font-bold">{formatCurrency(data.investment.purchase_price)}</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-600">Remodeling Costs</p>
-              <p className="text-2xl font-bold">{formatCurrency(data.investment.remodeling_costs)}</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-600">Total Investment</p>
-              <p className="text-2xl font-bold text-blue-600">
-                {formatCurrency(data.investment.total_investment)}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+        {/* Right Column */}
+        <div className="space-y-6">
+          {/* Remodel Cost Card */}
+          {data.investment && (
+            <Card>
+              <CardHeader title="Estimated remodel cost" icon={<Wrench className="h-4 w-4" />} />
+              <CardBody>
+                <div className="flex flex-wrap items-end justify-between gap-4">
+                  <div>
+                    <div className="text-3xl font-extrabold">
+                      {formatCurrency(data.investment.remodeling_costs)}
+                    </div>
+                    {data.property_info?.size_m2 && (
+                      <p className="text-xs text-neutral-500">
+                        {data.property_info.size_m2} m² × estimated cost per m²
+                      </p>
+                    )}
+                  </div>
+                  <div className="text-right">
+                    <p className="text-xs text-neutral-500">Capex (incl. purchase)</p>
+                    <div className="text-lg font-bold">
+                      {formatCurrency(data.investment.total_investment)}
+                    </div>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+          )}
 
-      {/* Financial Metrics */}
-      {data.financial_metrics && (
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Financial Metrics</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div>
-              <p className="text-sm text-gray-600">ROI</p>
-              <p className="text-2xl font-bold text-green-600">
-                {data.financial_metrics.metrics.roi_percentage.toFixed(2)}%
-              </p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-600">Net Yield</p>
-              <p className="text-2xl font-bold">
-                {data.financial_metrics.metrics.net_yield.toFixed(2)}%
-              </p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-600">Monthly Net Income</p>
-              <p className="text-2xl font-bold">
-                {formatCurrency(data.financial_metrics.net_income.monthly_net_income)}
-              </p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-600">Annual Net Income</p>
-              <p className="text-2xl font-bold">
-                {formatCurrency(data.financial_metrics.net_income.annual_net_income)}
-              </p>
-            </div>
-          </div>
+          {/* Rental Potential Card */}
           {data.rent_estimate && (
-            <div className="mt-4 pt-4 border-t">
-              <p className="text-sm text-gray-600">Monthly Rent Estimate</p>
-              <p className="text-xl font-semibold">
-                {formatCurrency(
-                  data.rent_estimate.monthly_rent || data.rent_estimate.total_monthly_rent || 0
-                )}
-              </p>
-            </div>
+            <Card>
+              <CardHeader title="Rental potential" icon={<Home className="h-4 w-4" />} />
+              <CardBody>
+                <div className="space-y-3">
+                  <div className="flex items-end justify-between">
+                    <div>
+                      <div className="text-2xl font-extrabold">
+                        {formatCurrency(
+                          data.rent_estimate.monthly_rent || data.rent_estimate.total_monthly_rent || 0
+                        )}{" "}
+                        / month
+                      </div>
+                      {data.rent_estimate.rental_strategy && (
+                        <p className="text-xs text-neutral-500">
+                          {data.rent_estimate.rental_strategy}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  {data.rent_estimate.annual_rent && (
+                    <div className="text-sm text-neutral-600">
+                      Annual rent: {formatCurrency(data.rent_estimate.annual_rent)}
+                    </div>
+                  )}
+                </div>
+              </CardBody>
+            </Card>
+          )}
+
+          {/* Yield & Payback Card */}
+          {data.financial_metrics && (
+            <Card>
+              <CardHeader title="Yield & payback" icon={<TrendingUp className="h-4 w-4" />} />
+              <CardBody>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                    <div className="text-xs text-neutral-500">Gross yield</div>
+                    <div className="text-lg font-bold text-neutral-900">
+                      {data.financial_metrics.metrics.gross_yield.toFixed(1)}%
+                    </div>
+                  </div>
+                  <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                    <div className="text-xs text-neutral-500">Net yield</div>
+                    <div className="text-lg font-bold text-emerald-700">
+                      {data.financial_metrics.metrics.net_yield.toFixed(1)}%
+                    </div>
+                  </div>
+                  <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                    <div className="text-xs text-neutral-500">Net income / yr</div>
+                    <div className="text-lg font-bold text-neutral-900">
+                      {formatCurrency(data.financial_metrics.net_income.annual_net_income)}
+                    </div>
+                  </div>
+                  <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                    <div className="text-xs text-neutral-500">Payback</div>
+                    <div className="text-lg font-bold text-neutral-900">
+                      {(data.financial_metrics.metrics.months_to_break_even / 12).toFixed(1)} yrs
+                    </div>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
           )}
         </div>
-      )}
+      </div>
 
       {/* Divisions with Images and Costs */}
       {data.rehab_costs && data.rehab_costs.divisions && data.rehab_costs.divisions.length > 0 && (
-        <div className="space-y-6">
+        <div className="space-y-6 mt-8">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-semibold">Divisions & Remodeling Costs</h2>
             <div className="text-right">
-              <p className="text-sm text-gray-600">Total Remodeling Cost</p>
-              <p className="text-2xl font-bold text-blue-600">
+              <p className="text-sm text-neutral-600">Total Remodeling Cost</p>
+              <p className="text-2xl font-bold text-emerald-700">
                 {formatCurrency(data.rehab_costs.property_total)}
               </p>
             </div>
           </div>
 
           {data.rehab_costs.divisions.map((division) => (
-            <div key={division.division_id} className="bg-white rounded-lg shadow overflow-hidden">
-              <div className="p-6">
+            <Card key={division.division_id}>
+              <CardBody>
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-semibold">
                       {formatRoomType(division.room_type)} - {division.division_id}
                     </h3>
-                    <p className="text-sm text-gray-600">{division.size_m2} m²</p>
+                    <p className="text-sm text-neutral-600">{division.size_m2} m²</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm text-gray-600">Total Cost</p>
-                    <p className="text-2xl font-bold text-blue-600">
+                    <p className="text-sm text-neutral-600">Total Cost</p>
+                    <p className="text-2xl font-bold text-emerald-700">
                       {formatCurrency(division.total_cost)}
                     </p>
                   </div>
@@ -244,7 +285,7 @@ export default function Report() {
                       if (value === null || value === undefined) return null;
                       return (
                         <div key={key} className="text-sm">
-                          <span className="text-gray-600">
+                          <span className="text-neutral-600">
                             {formatCategoryName(key)}:
                           </span>
                           <span className={`ml-2 font-medium ${getConditionColor(value)}`}>
@@ -264,9 +305,9 @@ export default function Report() {
                       {Object.entries(division.costs).map(([costType, cost]) => (
                         <div
                           key={costType}
-                          className="bg-gray-100 px-3 py-1 rounded text-sm"
+                          className="bg-neutral-100 px-3 py-1 rounded-xl text-sm border border-neutral-200"
                         >
-                          <span className="text-gray-600">
+                          <span className="text-neutral-600">
                             {formatCategoryName(costType)}:
                           </span>
                           <span className="ml-2 font-medium">{formatCurrency(cost)}</span>
@@ -284,7 +325,7 @@ export default function Report() {
                       {division.images.map((imageUrl, idx) => (
                         <div
                           key={idx}
-                          className="relative aspect-square rounded-lg overflow-hidden bg-gray-200"
+                          className="relative aspect-square rounded-xl overflow-hidden bg-neutral-200"
                         >
                           <img
                             src={imageUrl}
@@ -304,35 +345,39 @@ export default function Report() {
                 {division.detailed_notes && (
                   <div className="mt-4 pt-4 border-t">
                     <p className="text-sm font-semibold mb-2">Notes:</p>
-                    <p className="text-sm text-gray-700 whitespace-pre-wrap">
+                    <p className="text-sm text-neutral-700 whitespace-pre-wrap">
                       {division.detailed_notes}
                     </p>
                   </div>
                 )}
-              </div>
-            </div>
+              </CardBody>
+            </Card>
           ))}
         </div>
       )}
 
       {/* Cost Summary by Category */}
       {data.rehab_costs && data.rehab_costs.summary && (
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Cost Summary by Category</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {Object.entries(data.rehab_costs.summary)
-              .filter(([_, cost]) => cost > 0)
-              .map(([category, cost]) => (
-                <div key={category}>
-                  <p className="text-sm text-gray-600">
-                    {formatCategoryName(category)}
-                  </p>
-                  <p className="text-xl font-semibold">{formatCurrency(cost)}</p>
-                </div>
-              ))}
-          </div>
+        <div className="mt-8">
+          <Card>
+            <CardHeader title="Cost Summary by Category" icon={<Wrench className="h-4 w-4" />} />
+            <CardBody>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {Object.entries(data.rehab_costs.summary)
+                  .filter(([_, cost]) => cost > 0)
+                  .map(([category, cost]) => (
+                    <div key={category} className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                      <p className="text-xs text-neutral-500 mb-1">
+                        {formatCategoryName(category)}
+                      </p>
+                      <p className="text-lg font-bold text-neutral-900">{formatCurrency(cost)}</p>
+                    </div>
+                  ))}
+              </div>
+            </CardBody>
+          </Card>
         </div>
       )}
-    </div>
+    </main>
   );
 }

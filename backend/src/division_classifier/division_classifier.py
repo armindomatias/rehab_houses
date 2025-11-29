@@ -9,7 +9,6 @@ from openai import OpenAI, AsyncOpenAI
 from dotenv import load_dotenv
 import os
 import time
-import logging
 from datetime import datetime
 import json
 import asyncio
@@ -18,39 +17,19 @@ import re
 import requests
 
 from src.idealista_scraper.idealista_data_manipulator import IdealistaDataManipulator
+from src.utils import get_logger
 
 class DivisionClassifier:
     
     def __init__(self):
 
-        self.logger = self._setup_logging()
+        self.logger = get_logger(__name__)
         self.logger.info("Initializing DivisionClassifier...")
 
         self._load_environment_variables()
 
         self.client = OpenAI(api_key=self.openai_api_key)
         self.async_client = AsyncOpenAI(api_key=self.openai_api_key)
-
-    # Logger setup
-    def _setup_logging(self):
-        """Setup logging configuration with both file and console handlers"""
-        # Create logs directory if it doesn't exist
-        #os.makedirs('logs', exist_ok=True)
-        
-        # Create a timestamp for the log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        #log_filename = f"logs/division_classifier_{timestamp}.log"
-        
-        # Configure logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[
-                #logging.FileHandler(log_filename),
-                logging.StreamHandler()
-            ]
-        )
-        return logging.getLogger(__name__)
 
     def _load_environment_variables(self):
         """Load and validate environment variables"""

@@ -8,7 +8,6 @@ import os
 import re
 import json
 import asyncio
-import logging
 from typing import Dict, Any, Optional
 from datetime import datetime
 
@@ -18,6 +17,7 @@ from src.division_classifier.division_classifier import DivisionClassifier
 from src.division_classifier.deduplication import Deduplication
 from src.calculators.rehab_calculator import PropertyRemodelingCalculator
 from src.calculators.finance_calculator import PropertyFinanceCalculator
+from src.utils import get_logger
 
 
 class PropertyAnalysisPipeline:
@@ -33,7 +33,7 @@ class PropertyAnalysisPipeline:
     
     def __init__(self):
         """Initialize all services"""
-        self.logger = self._setup_logging()
+        self.logger = get_logger(__name__)
         self.logger.info("Initializing PropertyAnalysisPipeline...")
         
         # Initialize services
@@ -42,15 +42,6 @@ class PropertyAnalysisPipeline:
         self.deduplication = Deduplication()
         
         self.logger.info("PropertyAnalysisPipeline initialized successfully")
-    
-    def _setup_logging(self):
-        """Setup logging configuration"""
-        logging.basicConfig(
-            level=logging.INFO,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[logging.StreamHandler()]
-        )
-        return logging.getLogger(__name__)
     
     def _extract_listing_id_from_url(self, url: str) -> Optional[str]:
         """Extract listing ID from Idealista URL"""

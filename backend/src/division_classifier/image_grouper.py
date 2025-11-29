@@ -10,7 +10,6 @@ import sys
 import re
 import json
 import asyncio
-import logging
 import requests
 from typing import List, Dict, Any, Optional
 from datetime import datetime
@@ -25,6 +24,7 @@ if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
 
 from src.idealista_scraper.idealista_data_manipulator import IdealistaDataManipulator
+from src.utils import get_logger
 
 from openai import AsyncOpenAI
 
@@ -39,7 +39,7 @@ class ImageGrouper:
     """
     
     def __init__(self):
-        self.logger = self._setup_logging()
+        self.logger = get_logger(__name__)
         self.logger.info("Initializing ImageGrouper...")
         
         self._load_environment_variables()
@@ -84,15 +84,6 @@ class ImageGrouper:
         self.generic_descriptions = {"photo", "image", "foto", "imagem", ""}
         
         self.logger.info("ImageGrouper initialized successfully")
-    
-    def _setup_logging(self):
-        """Setup logging configuration"""
-        logging.basicConfig(
-            level=logging.INFO,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[logging.StreamHandler()]
-        )
-        return logging.getLogger(__name__)
     
     def _load_environment_variables(self):
         """Load and validate environment variables"""

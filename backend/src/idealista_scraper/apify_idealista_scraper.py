@@ -9,10 +9,11 @@ import requests
 import json
 from dotenv import load_dotenv
 import os
-import logging
 import time
 from datetime import datetime
 import re
+
+from src.utils import get_logger
 
 class ApifyIdealistaScraper:
     """
@@ -21,7 +22,7 @@ class ApifyIdealistaScraper:
     
     def __init__(self):
         """Initialize the scraper with environment variables and logging setup"""
-        self.logger = self._setup_logging()
+        self.logger = get_logger(__name__)
         self.logger.info("Initializing ApifyIdealistaScraper...")
         
         # Load environment variables
@@ -41,26 +42,6 @@ class ApifyIdealistaScraper:
         }
         
         self.logger.info("ApifyIdealistaScraper initialized successfully")
-    
-    def _setup_logging(self):
-        """Setup logging configuration with both file and console handlers"""
-        # Create logs directory if it doesn't exist
-        #os.makedirs('logs', exist_ok=True)
-        
-        # Create a timestamp for the log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        #log_filename = f'logs/apify_idealista_scraper_{timestamp}.log'
-        
-        # Configure logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                #logging.FileHandler(log_filename),
-                logging.StreamHandler()
-            ]
-        )
-        return logging.getLogger(__name__)
     
     def _load_environment_variables(self):
         """Load and validate environment variables"""

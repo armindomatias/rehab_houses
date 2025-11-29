@@ -3,41 +3,19 @@ import requests
 import json
 import os
 from typing import List, Dict, Any, Optional
-
-import logging
 from datetime import datetime
-
 import re
 from io import BytesIO
 from PIL import Image
 import imagehash
 
+from src.utils import get_logger
+
 class Deduplication:
 
     def __init__(self):
-        self.logger = self._setup_logging()
+        self.logger = get_logger(__name__)
         self.logger.info("Initializing Deduplication...")
-
-    # Logger setup
-    def _setup_logging(self):
-        """Setup logging configuration with both file and console handlers"""
-        # Create logs directory if it doesn't exist
-        #os.makedirs('logs', exist_ok=True)
-        
-        # Create a timestamp for the log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        #log_filename = f"logs/deduplication_{timestamp}.log"
-        
-        # Configure logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[
-                #logging.FileHandler(log_filename),
-                logging.StreamHandler()
-            ]
-        )
-        return logging.getLogger(__name__)
 
     def _download_image_bytes(self, url: str) -> Optional[bytes]:
         try:

@@ -13,10 +13,7 @@ from typing import Dict, List, Any, Optional, Tuple
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-try:
-    from src.rehab_calculator import PropertyRemodelingCalculator
-except ImportError:
-    from rehab_calculator import PropertyRemodelingCalculator
+from src.calculators.rehab_calculator import PropertyRemodelingCalculator
 
 
 class PropertyFinanceCalculator:
@@ -440,7 +437,7 @@ if __name__ == "__main__":
     # Purchase price: 315,000 EUR
     # Remodeling costs: 49,606.43 EUR (from rehab calculator)
     
-    from src.rehab_calculator import PropertyRemodelingCalculator
+    from src.calculators.rehab_calculator import PropertyRemodelingCalculator
     
     # First, get remodeling costs
     rehab_calc = PropertyRemodelingCalculator(

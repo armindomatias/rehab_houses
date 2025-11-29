@@ -17,10 +17,7 @@ from typing import List, Dict, Any, Optional
 import re
 import requests
 
-try:
-    from src.idealista_data_manipulator import IdealistaDataManipulator
-except ImportError:
-    from idealista_data_manipulator import IdealistaDataManipulator
+from src.idealista_scraper.idealista_data_manipulator import IdealistaDataManipulator
 
 class DivisionClassifier:
     

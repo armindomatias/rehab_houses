@@ -1,0 +1,155 @@
+{
+  "views": [
+    {
+      "division_id": "views_1",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ec/d2/05/301345813.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/03/6d/301345830.jpg"
+      ],
+      "num_source_images": 2,
+      "overall_condition": 2.0,
+      "painting_condition": 2.0,
+      "windows_condition": 2.5,
+      "windows_number": 16,
+      "detailed_notes": "The image shows the exterior facade and window views of a residential building. The facade paint appears somewhat worn and stained in areas, indicating the need for repainting and moisture assessment. Windows have roller shutters and frames that appear aged but still functional. No visible cracks or major structural issues detected, yet renovation might improve appearance and weatherproofing. \nThis image shows the exterior view of a residential building facade with multiple windows and several air conditioning units mounted externally. The building paint appears mostly intact but shows signs of aging and inconsistency in color. Window shutters vary in condition with some appearing damaged or partially closed which might require repair or replacement. No direct interior elements are visible, so interior-specific conditions are not assessable. External renovation could include repainting the facade and inspecting air conditioning units for function and safety compliance."
+    },
+    {
+      "division_id": "views_2",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e5/30/37/301345815.jpg"
+      ],
+      "num_source_images": 1,
+      "windows_number": 1,
+      "detailed_notes": "This image shows an outdoor garden or communal green area with grass, trees, and paved walkways. No interior features like flooring, ceilings, or appliances are visible, so condition ratings related to indoor elements cannot be provided. The presence of litter and fallen leaves suggests routine maintenance is required. The paving appears intact but could benefit from cleaning. Trees close to buildings should be monitored for root intrusion risks. No visible damage to building facades or windows is noted, but assessment through the window glazing is limited."
+    },
+    {
+      "division_id": "views_3",
+      "room_type": "views",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e7/27/33/301345832.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 3.0,
+      "flooring_condition": 3.0,
+      "windows_number": 0,
+      "detailed_notes": "Outdoor garden area with grass and several trees/plants. No indoor elements visible. The green space appears generally well maintained, though some fallen leaves and minor litter are present. No visible signs of damage to walkway pavement. No plumbing, electrical, appliances, windows, or doors are present or visible in the image."
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/6c/ed/9f/301345828.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 2.0,
+      "appliances_condition": 0.0,
+      "plumbing_condition": 2.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 2.0,
+      "painting_condition": 2.0,
+      "windows_number": 0,
+      "detailed_notes": "Kitchen features older wooden cabinetry in fair condition with some visible stains under the sink area. Granite countertop is intact but shows signs of wear. No appliances are visible, indicating replacement or installation needed. The ceiling has minor discoloration suggesting moisture exposure. The room size estimated at about 9 m2 based on door height and tile size. Painting is outdated and would benefit from refreshing. Plumbing needs verification and possibly updates. Electrical outlets not visible to assess condition."
+    }
+  ],
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b8/ff/34/301345808.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 2.0,
+      "electrical_condition": 2.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 2.0,
+      "windows_number": 0,
+      "detailed_notes": "The room appears to be a small to medium living room with a tiled floor in good condition and a white ceiling. The paint shows signs of age and some staining near the floor, particularly under the archway, which may indicate minor moisture issues needing further inspection. Doors are wooden and intact but slightly worn. Electrical outlets are present but should be checked to modern standards. No windows are visible, suggesting limited natural light and ventilation, which should be considered in renovation. Plumbing and appliances are not visible in this room."
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/89/17/b4/301345831.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 3.0,
+      "electrical_condition": 2.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_number": 0,
+      "detailed_notes": "This is a hallway with visible tiled flooring and staircase. Floor tiles appear intact but slightly worn. Walls and ceiling are painted white and show minor stains and marks, suggesting need for repainting. There are no visible windows. The door to the right looks structurally sound but paint is somewhat aged. Electrical panel is exposed and outdated, recommend inspection and possible upgrade. No visible plumbing or appliances. No visible moisture or cracks detected. Install better lighting for improved safety and aesthetics."
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/77/c5/301345809.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 1.0,
+      "electrical_condition": 1.0,
+      "flooring_condition": 2.0,
+      "painting_condition": 0.0,
+      "windows_condition": 3.0,
+      "windows_number": 1,
+      "detailed_notes": "Room appears to be a small bedroom. Floor tiles are intact but slightly outdated, walls show significant moisture damage and peeling paint especially near floor and window wall. The window and roller shutter seem functional and in good condition. Electrical outlets lack covers posing risk and requiring immediate attention. Ceiling condition could not be assessed from photo. Recommend addressing moisture sources, repainting with mold-resistant paint, repairing damaged walls, and electrical fixture upgrades."
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/5c/ac/20/301345810.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 1.0,
+      "flooring_condition": 1.0,
+      "ceiling_condition": 0.0,
+      "painting_condition": 1.0,
+      "windows_number": 0,
+      "detailed_notes": "The room appears to be a small bedroom based on size and door location. Significant moisture damage is present on the upper corner of the ceiling and lower wall portions, with visible peeling paint and cracked plaster. Flooring shows wear and staining and likely requires replacement. Door is older but functional. There is no visible window for natural light or ventilation, which may contribute to moisture issues. Electrical outlets and plumbing fixtures are not visible and should be inspected. Major renovation needed to address moisture, repaint walls and ceiling, install new flooring, and evaluate structural integrity."
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/36/5c/f3/301345816.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 3.0,
+      "electrical_condition": 3.0,
+      "flooring_condition": 3.0,
+      "ceiling_condition": 3.0,
+      "painting_condition": 3.0,
+      "windows_condition": 2.0,
+      "windows_number": 1,
+      "detailed_notes": "This is a common area likely a building entry or hallway with visible stairs. Estimated size is approximately 7.5 m² based on tile and door dimensions. Floor tiles and walls are intact but show minor wear and dirt requiring cleaning or minor touch-ups. Paint is generally in good condition but shows some scuff marks. Ceiling is clean and consistent. One old window present, which might need maintenance or replacement for improved insulation. Electrical wiring and visible fixtures appear modern and functional with no visible damage. No plumbing or appliances detected in image. Installation appears safe with no visible moisture, cracks, or structural issues. Recommend thorough cleaning, repainting walls for freshness, and inspecting window for functionality."
+    },
+    {
+      "division_id": "common_areas_2",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/dc/e8/74/301345829.jpg"
+      ],
+      "num_source_images": 1,
+      "overall_condition": 2.0,
+      "electrical_condition": 2.0,
+      "flooring_condition": 3.0,
+      "painting_condition": 2.0,
+      "windows_number": 0,
+      "detailed_notes": "The area shown is a small common hallway or entrance area with staircase access. The flooring is in relatively good condition, made of tiles or stone, with minor wear. The walls require repainting due to visible scuffs and marks. The wooden door and frame exhibit dirt and minor damage, suggesting the need for cleaning or minor repair. The stair edges show surface wear and cracking, potentially a tripping hazard requiring attention. Electrical panel door visible at the top appears old and might need updating for safety compliance. There are no visible windows, ceiling condition cannot be assessed. No plumbing or appliances present in this common area."
+    }
+  ]
+}

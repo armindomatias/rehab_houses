@@ -1,0 +1,464 @@
+{
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b8/57/cd/298217689.jpg"
+      ],
+      "gallery_indices": [
+        0
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "pale yellow with white ceiling trim",
+          "floor_type": "light beige polished tile",
+          "furniture_style": "classic wooden with intricate carving, polished finish",
+          "distinctive_elements": [
+            "large wooden china cabinet with glass doors and carved details",
+            "wooden dining table with matching chairs upholstered in soft yellow fabric",
+            "beige leather sofa",
+            "cream-colored ottoman",
+            "ornate gold and amber chandelier",
+            "elaborate gold curtains with swags and tails",
+            "decorative porcelain vases with floral patterns",
+            "large decorative mirror with curved carved wooden frame"
+          ],
+          "color_scheme": "warm yellows, beige and brown wood tones",
+          "window_style": "large multi-pane window with white frame, covered by ornate gold curtains",
+          "decorative_elements": [
+            "framed landscape painting on the wall",
+            "various porcelain decorative vases on cabinet and side tables",
+            "floral centerpiece on dining table",
+            "traditional patterned area rug near entrance"
+          ]
+        }
+      ]
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ef/57/03/298217693.jpg"
+      ],
+      "gallery_indices": [
+        4
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white tiles with decorative border tiles",
+          "floor_type": "light gray tiles",
+          "furniture_style": "rustic wooden cabinetry with a natural finish",
+          "distinctive_elements": [
+            "granite countertop with black and white speckled pattern",
+            "wooden chairs with simple design",
+            "built-in oven and stovetop",
+            "white microwave on open wooden shelving",
+            "small wine rack built into cabinetry",
+            "dishwasher and washing machine under counter",
+            "decorative ceramic plates and jars on shelves",
+            "paper towel holder on counter"
+          ],
+          "color_scheme": "warm wood tones with white and gray accents",
+          "window_style": "large rectangular window with white frame and shutter",
+          "decorative_elements": [
+            "basket with artificial flowers near window",
+            "small framed picture on tiled wall"
+          ]
+        }
+      ]
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/d1/d3/61/298217695.jpg"
+      ],
+      "gallery_indices": [
+        6
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "cream",
+          "floor_type": "light wood laminate",
+          "furniture_style": "classic wooden furniture",
+          "distinctive_elements": [
+            "dark wood door frames and doors",
+            "wooden chest with curved front on the left",
+            "classic crystal chandelier ceiling light",
+            "white power outlet low on wall"
+          ],
+          "color_scheme": "cream, dark wood, light wood",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "decorative lace runner on chest",
+            "blue and white ceramic vases on wooden chest in adjacent room",
+            "ornate gold framed mirror",
+            "medium brown area rug in adjacent room"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_2",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c1/8d/79/298217708.jpg"
+      ],
+      "gallery_indices": [
+        19
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white with dark marble tiled section",
+          "floor_type": "white marble tiles with black border",
+          "furniture_style": "none",
+          "distinctive_elements": [
+            "stainless steel elevator doors",
+            "dark marble wall tiles with horizontal decorative border pattern",
+            "two elevator doors side by side"
+          ],
+          "color_scheme": "white, black, dark green marble",
+          "window_style": "none visible",
+          "decorative_elements": [
+            "small framed pictures on white wall"
+          ],
+          "architectural_features": "corridor with recessed ceiling lights and two elevators embedded in wall"
+        }
+      ]
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/0c/ca/298217697.jpg"
+      ],
+      "gallery_indices": [
+        8
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige with a yellow border near the ceiling",
+          "floor_type": "wooden laminate, medium tone",
+          "furniture_style": "classic/traditional wooden furniture with a polished dark finish",
+          "distinctive_elements": [
+            "wooden bed frame with curved sleigh style ends",
+            "matching wooden nightstand with brass lamp and white pleated lampshade",
+            "wooden dresser with tall mirror",
+            "cream-colored fabric armchair with carved wooden arms and legs",
+            "curtains with two layers: sheer white with gold dots and heavier beige drapes"
+          ],
+          "color_scheme": "beige, cream and brown tones with gold accents",
+          "window_style": "medium-sized window with white frame, centered in the room behind chair",
+          "decorative_elements": [
+            "wooden crucifix on the wall above the bed",
+            "framed artwork on opposite wall",
+            "glass corner display cabinet with various items",
+            "ceiling light fixture with glass and brass details"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0c/e9/58/298217698.jpg"
+      ],
+      "gallery_indices": [
+        9
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "light brown wood",
+          "furniture_style": "classic/traditional wooden furniture",
+          "distinctive_elements": [
+            "wooden bed frame with curved headboard and footboard",
+            "matching wooden dresser with multiple drawers",
+            "small wooden nightstand",
+            "vintage style lamp with fringed lampshade",
+            "dark brown framed armchair with light green cushion and pink decorative pillows",
+            "blue rectangular rug next to bed"
+          ],
+          "color_scheme": "beige, brown, and blue accents",
+          "window_style": "large window with white frame, decorated with beige draped valance and curtains",
+          "decorative_elements": [
+            "small statue on nightstand",
+            "decorative pink pillows on chair"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_3",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/63/e1/49/298217699.jpg"
+      ],
+      "gallery_indices": [
+        10
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light cream",
+          "floor_type": "light wood",
+          "furniture_style": "classic/antique",
+          "distinctive_elements": [
+            "large dark wood bed frame with a carved headboard",
+            "matching dark wood dresser with mirror",
+            "wooden coat stand",
+            "side table with vintage-style lamp with fringed lampshade",
+            "extra wooden chair with green upholstered seat and backrest",
+            "purple patterned bedspread and pillows"
+          ],
+          "color_scheme": "light cream, dark wood, and purple",
+          "window_style": "partially visible window with beige drapes (seen in mirror)",
+          "decorative_elements": [
+            "wooden crucifix with a rosary hanging above bed",
+            "small framed objects on dresser"
+          ]
+        }
+      ]
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/fb/9a/51/298217703.jpg"
+      ],
+      "gallery_indices": [
+        14
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white with small subtle dots and a dark blue decorative tile border",
+          "floor_type": "dark blue ceramic tiles",
+          "furniture_style": "white built-in bathroom vanity with multiple cabinets and drawers",
+          "distinctive_elements": [
+            "shower cabin with frosted glass panels and metal frame",
+            "stainless steel shower panel with multiple jets",
+            "white towel on metal towel holder",
+            "large bathroom mirror with built-in lighting on top",
+            "small wall-mounted white cabinet with glass door on the right side of mirror",
+            "yellow accent strip along ceiling perimeter"
+          ],
+          "color_scheme": "white, dark blue, and yellow",
+          "window_style": "wood-framed window visible through the mirror reflection",
+          "decorative_elements": [
+            "small decorative items on top of the mirror cabinet including vases and small containers"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bathroom_2",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/5b/01/298217704.jpg"
+      ],
+      "gallery_indices": [
+        15
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "two-tone tiles with light gray upper half and green lower half separated by a decorative border",
+          "floor_type": "greenish ceramic tiles",
+          "furniture_style": "classic white bathroom fixtures",
+          "distinctive_elements": [
+            "curved corner shower with frosted sliding doors",
+            "white toilet with a closed lid",
+            "white bidet",
+            "white vanity cabinet with integrated sink and storage",
+            "small beige towel hanging on white metal towel holder",
+            "yellow sunflowers patterned bath mat",
+            "wall-mounted cream colored cabinet with mirrored doors"
+          ],
+          "color_scheme": "green, white and beige with yellow accents",
+          "window_style": "none visible; room illuminated by ceiling lighting",
+          "decorative_elements": [
+            "decorative tile border with wave-like pattern",
+            "small shelves inside shower"
+          ]
+        }
+      ]
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/e2/eb/298217706.jpg"
+      ],
+      "gallery_indices": [
+        17
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "dark green marble tiles with a beige patterned horizontal border",
+          "floor_type": "white marble tiles with black tile accents",
+          "furniture_style": "none",
+          "distinctive_elements": [
+            "built-in planters with green plants and red flowers",
+            "black rounded steps leading to a staircase with beige steps",
+            "decorative beige patterned band around the perimeter walls"
+          ],
+          "color_scheme": "dark green, white, black, beige",
+          "window_style": "none visible",
+          "decorative_elements": [
+            "plants in built-in planters"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "common_areas_2",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/9e/05/298217707.jpg"
+      ],
+      "gallery_indices": [
+        18
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white with dark green marble tile section",
+          "floor_type": "marble tiles in white with black borders",
+          "furniture_style": "modern, minimal",
+          "distinctive_elements": [
+            "dark green marble wall tiles with beige decorative border",
+            "two stainless steel elevator doors",
+            "potted plant with large green leaves in a tall decorative vase",
+            "three small framed artworks on the wall near elevators"
+          ],
+          "color_scheme": "white, dark green, black, beige",
+          "window_style": "large glass entrance door with metal frame",
+          "decorative_elements": [
+            "potted plant near elevator",
+            "decorative beige border on marble wall tiles",
+            "framed artworks on wall"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "common_areas_3",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/6e/cb/298217709.jpg"
+      ],
+      "gallery_indices": [
+        20
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "brown ceramic tiles",
+          "furniture_style": "none visible on terrace",
+          "distinctive_elements": [
+            "sliding glass door with white frame",
+            "marble trim around door",
+            "potted tall slender plant",
+            "metal railing painted green"
+          ],
+          "color_scheme": "neutral beige and brown tones",
+          "window_style": "large sliding glass door with white grid-frame",
+          "decorative_elements": [
+            "potted plant in terracotta pot"
+          ],
+          "unique_architectural_features": [
+            "covered terrace with flat ceiling",
+            "marble door frame"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "common_areas_4",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/3a/10/c7/298217710.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/6a/6a/ed/298217712.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/66/1d/de/298217713.jpg"
+      ],
+      "gallery_indices": [
+        21,
+        23,
+        24
+      ],
+      "num_images": 3,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "terracotta tiles",
+          "furniture_style": "outdoor casual",
+          "distinctive_elements": [
+            "black metal railing",
+            "variety of small potted plants",
+            "sliding glass doors with white frames"
+          ],
+          "color_scheme": "neutral tones with green from plants",
+          "window_style": "large sliding glass door with grid pattern, white frame",
+          "decorative_elements": [
+            "outdoor lanterns hanging from ceiling",
+            "plants in assorted colorful pots"
+          ],
+          "architectural_features": "long narrow balcony with partial overhead cover and vertical support columns"
+        },
+        {
+          "wall_color": "light beige",
+          "floor_type": "terracotta tiles",
+          "furniture_style": "outdoor minimal",
+          "distinctive_elements": [
+            "green plant pot with dry plant",
+            "metal railing painted in dark green",
+            "large sliding glass doors with white grid frames",
+            "folded beige blinds"
+          ],
+          "color_scheme": "light beige, terracotta and green",
+          "window_style": "sliding glass doors with white grid frames",
+          "decorative_elements": [],
+          "unique_architectural_features": "narrow balcony corridor with metal railing and overhanging ceiling"
+        },
+        {
+          "wall_color": "light beige",
+          "floor_type": "brown ceramic tiles",
+          "furniture_style": "outdoor casual",
+          "distinctive_elements": [
+            "small potted plants along balcony ledge",
+            "two soccer balls on floor",
+            "sliding glass door with white frame",
+            "metal railing with vertical bars"
+          ],
+          "color_scheme": "neutral earth tones",
+          "window_style": "large sliding glass door with white frame on left side",
+          "decorative_elements": [
+            "various small potted plants on balcony ledge"
+          ],
+          "unique_architectural_features": "balcony with half-height wall and metal railing, white marble trim around sliding door"
+        }
+      ]
+    }
+  ]
+}

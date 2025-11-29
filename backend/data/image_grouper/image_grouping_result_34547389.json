@@ -1,0 +1,318 @@
+{
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b8/57/cd/298217689.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/02/66/10/298217690.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/27/2d/50/298217691.jpg"
+      ],
+      "gallery_indices": [
+        0,
+        1,
+        2
+      ],
+      "num_images": 3,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b8/57/cd/298217689.jpg",
+          "description": "Living room",
+          "vision_room_type": "living_room",
+          "vision_confidence": 0.8,
+          "gallery_index": 0,
+          "phash": "928dd563cc508fb9",
+          "final_room_type": "living_room",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/02/66/10/298217690.jpg",
+          "description": "Living room",
+          "vision_room_type": "living_room",
+          "vision_confidence": 0.8,
+          "gallery_index": 1,
+          "phash": "c198a176b9b5906f",
+          "final_room_type": "living_room",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/27/2d/50/298217691.jpg",
+          "description": "Living room",
+          "vision_room_type": "living_room",
+          "vision_confidence": 0.8,
+          "gallery_index": 2,
+          "phash": "bdc2c2167bc00f79",
+          "final_room_type": "living_room",
+          "room_type_confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/f3/1b/db/298217692.jpg"
+      ],
+      "gallery_indices": [
+        3
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/f3/1b/db/298217692.jpg",
+          "description": "Living room",
+          "vision_room_type": "hallway",
+          "vision_confidence": 0.8,
+          "gallery_index": 3,
+          "phash": "ace3d934e20db6c1",
+          "final_room_type": "hallway",
+          "room_type_confidence": 0.85
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_2",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/d1/d3/61/298217695.jpg"
+      ],
+      "gallery_indices": [
+        6
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/d1/d3/61/298217695.jpg",
+          "description": "Corridor",
+          "vision_room_type": "hallway",
+          "vision_confidence": 0.8,
+          "gallery_index": 6,
+          "phash": "c1ef4b509e2a4b53",
+          "final_room_type": "hallway",
+          "room_type_confidence": 0.95
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_3",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c1/8d/79/298217708.jpg"
+      ],
+      "gallery_indices": [
+        19
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c1/8d/79/298217708.jpg",
+          "description": "Corridor",
+          "vision_room_type": "hallway",
+          "vision_confidence": 0.8,
+          "gallery_index": 19,
+          "phash": "bc99c39839d31f06",
+          "final_room_type": "hallway",
+          "room_type_confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ef/57/03/298217693.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/f4/73/63/298217694.jpg"
+      ],
+      "gallery_indices": [
+        4,
+        5
+      ],
+      "num_images": 2,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ef/57/03/298217693.jpg",
+          "description": "Kitchen",
+          "vision_room_type": "kitchen",
+          "vision_confidence": 0.8,
+          "gallery_index": 4,
+          "phash": "df8048ee8b6978d2",
+          "final_room_type": "kitchen",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/f4/73/63/298217694.jpg",
+          "description": "Kitchen",
+          "vision_room_type": "kitchen",
+          "vision_confidence": 0.8,
+          "gallery_index": 5,
+          "phash": "9ca88dadcb0e3b83",
+          "final_room_type": "kitchen",
+          "room_type_confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/0c/ca/298217697.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0c/e9/58/298217698.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/63/e1/49/298217699.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/ba/c9/298217700.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/18/be/d4/298217701.jpg"
+      ],
+      "gallery_indices": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "num_images": 5,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b4/0c/ca/298217697.jpg",
+          "description": "Bedroom",
+          "vision_room_type": "bedroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 8,
+          "phash": "a9f20e9f91cd6660",
+          "final_room_type": "bedroom",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0c/e9/58/298217698.jpg",
+          "description": "Bedroom",
+          "vision_room_type": "bedroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 9,
+          "phash": "f18dea64056bf225",
+          "final_room_type": "bedroom",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/63/e1/49/298217699.jpg",
+          "description": "Bedroom",
+          "vision_room_type": "bedroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 10,
+          "phash": "9eb9846a4f973849",
+          "final_room_type": "bedroom",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/34/ba/c9/298217700.jpg",
+          "description": "Bedroom",
+          "vision_room_type": "bedroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 11,
+          "phash": "dac5159ab0c76d34",
+          "final_room_type": "bedroom",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/18/be/d4/298217701.jpg",
+          "description": "Bedroom",
+          "vision_room_type": "bedroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 12,
+          "phash": "97e8c50ece8432eb",
+          "final_room_type": "bedroom",
+          "room_type_confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/fb/9a/51/298217703.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/5b/01/298217704.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/ba/e4/298217705.jpg"
+      ],
+      "gallery_indices": [
+        14,
+        15,
+        16
+      ],
+      "num_images": 3,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/fb/9a/51/298217703.jpg",
+          "description": "Kitchen",
+          "vision_room_type": "bathroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 14,
+          "phash": "91b96a973286996e",
+          "final_room_type": "bathroom",
+          "room_type_confidence": 0.85
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/5b/01/298217704.jpg",
+          "description": "Bathroom",
+          "vision_room_type": "bathroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 15,
+          "phash": "c08ed1a573da63b4",
+          "final_room_type": "bathroom",
+          "room_type_confidence": 0.95
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/96/ba/e4/298217705.jpg",
+          "description": "Bathroom",
+          "vision_room_type": "bathroom",
+          "vision_confidence": 0.8,
+          "gallery_index": 16,
+          "phash": "b29769f05ce194b8",
+          "final_room_type": "bathroom",
+          "room_type_confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/e2/eb/298217706.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/9e/05/298217707.jpg"
+      ],
+      "gallery_indices": [
+        17,
+        18
+      ],
+      "num_images": 2,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/4a/e2/eb/298217706.jpg",
+          "description": "Living room",
+          "vision_room_type": "common_areas",
+          "vision_confidence": 0.8,
+          "gallery_index": 17,
+          "phash": "95e8cb62ec189f86",
+          "final_room_type": "common_areas",
+          "room_type_confidence": 0.85
+        },
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/9e/05/298217707.jpg",
+          "description": "Kitchen",
+          "vision_room_type": "common_areas",
+          "vision_confidence": 0.8,
+          "gallery_index": 18,
+          "phash": "bc81c2ef872c503f",
+          "final_room_type": "common_areas",
+          "room_type_confidence": 0.85
+        }
+      ]
+    }
+  ]
+}

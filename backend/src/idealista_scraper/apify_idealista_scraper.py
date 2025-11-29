@@ -7,13 +7,13 @@
 # Import libraries
 import requests
 import json
-from dotenv import load_dotenv
 import os
 import time
 from datetime import datetime
 import re
 
 from src.utils import get_logger
+from src.core.config import APIFY_USER_ID, APIFY_API_TOKEN, APIFY_ACTOR_ID
 
 class ApifyIdealistaScraper:
     """
@@ -25,8 +25,10 @@ class ApifyIdealistaScraper:
         self.logger = get_logger(__name__)
         self.logger.info("Initializing ApifyIdealistaScraper...")
         
-        # Load environment variables
-        self._load_environment_variables()
+        # Use environment variables from core config
+        self.apify_user_id = APIFY_USER_ID
+        self.apify_api_token = APIFY_API_TOKEN
+        self.actor_id = APIFY_ACTOR_ID
         
         # Apify API methods
         self.apify_methods = {
@@ -42,31 +44,6 @@ class ApifyIdealistaScraper:
         }
         
         self.logger.info("ApifyIdealistaScraper initialized successfully")
-    
-    def _load_environment_variables(self):
-        """Load and validate environment variables"""
-        self.logger.info("Loading environment variables...")
-        load_dotenv()
-        
-        self.apify_user_id = os.getenv("APIFY_USER_ID")
-        self.apify_api_token = os.getenv("APIFY_API_TOKEN")
-        self.actor_id = os.getenv("APIFY_ACTOR_ID")
-        
-        # Log environment variable status
-        if self.apify_user_id:
-            self.logger.info("APIFY_USER_ID loaded successfully")
-        else:
-            self.logger.warning("APIFY_USER_ID not found in environment variables")
-
-        if self.apify_api_token:
-            self.logger.info("APIFY_API_TOKEN loaded successfully")
-        else:
-            self.logger.error("APIFY_API_TOKEN not found in environment variables")
-
-        if self.actor_id:
-            self.logger.info(f"APIFY_ACTOR_ID loaded successfully: {self.actor_id}")
-        else:
-            self.logger.error("APIFY_ACTOR_ID not found in environment variables")
     
     def _validate_credentials(self):
         """Validate that all required credentials are available"""
@@ -125,48 +102,7 @@ class ApifyIdealistaScraper:
             self.save_property_data(property_data, url_listing)
         
         return property_data
-    
-    def scrape_batch(self, url_listings: list, save_data: bool = True):
-        """
-        Scrape property data from multiple Idealista listings
-        
-        Args:
-            url_listings (list): List of Idealista listing URLs to scrape
-            save_data (bool): Whether to save the data to JSON files
-            
-        Returns:
-            list: List of property data from the listings
-        """
-        self.logger.info(f"Starting batch scraping for {len(url_listings)} URLs")
-        
-        if not url_listings:
-            self.logger.error("No URLs provided for batch scraping")
-            return []
-        
-        if not self._validate_credentials():
-            return []
-        
-        results = []
-        
-        for i, url in enumerate(url_listings, 1):
-            self.logger.info(f"Processing URL {i}/{len(url_listings)}: {url}")
-            try:
-                result = self._make_api_request(url)
-                if result:
-                    results.append(result)
-                    self.logger.info(f"Successfully scraped URL {i}/{len(url_listings)}")
-                    
-                    if save_data:
-                        self.save_property_data(result, url)
-                else:
-                    self.logger.error(f"Failed to scrape URL {i}/{len(url_listings)}")
-            except Exception as e:
-                self.logger.error(f"Exception occurred while scraping URL {i}/{len(url_listings)}: {str(e)}")
-                continue
-        
-        self.logger.info(f"Batch scraping completed. Successfully scraped {len(results)}/{len(url_listings)} URLs")
-        return results
-    
+
     def _make_api_request(self, url_listing: str):
         """
         Make API request to Apify for a single URL

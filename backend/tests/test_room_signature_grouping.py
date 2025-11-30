@@ -65,37 +65,37 @@ class RoomSignatureGrouper:
             description_text = f"\nImage description: {description}" if description else ""
             
             prompt = f"""Analyze this real estate photo and provide BOTH:
-1. Room type classification
-2. Room signature: distinctive visual features that identify THIS SPECIFIC physical room
+                1. Room type classification
+                2. Room signature: distinctive visual features that identify THIS SPECIFIC physical room
 
-For the room signature, describe distinctive features that would help identify if another photo shows the SAME physical room:
-- Wall color/pattern/texture
-- Floor type/color/material
-- Furniture style, colors, and distinctive pieces (bed sheets, curtains, lamps, etc.)
-- Window style/location/frame color
-- Decorative elements (paintings, plants, etc.)
-- Overall color scheme
-- Any unique architectural features or furniture arrangements
+                For the room signature, describe distinctive features that would help identify if another photo shows the SAME physical room:
+                - Wall color/pattern/texture
+                - Floor type/color/material
+                - Furniture style, colors, and distinctive pieces (bed sheets, curtains, lamps, etc.)
+                - Window style/location/frame color
+                - Decorative elements (paintings, plants, etc.)
+                - Overall color scheme
+                - Any unique architectural features or furniture arrangements
 
-Return ONLY valid JSON format (no markdown, no code blocks):
-{{
-    "room_type": "bedroom",
-    "confidence": 0.9,
-    "signature": {{
-        "wall_color": "white",
-        "floor_type": "wood",
-        "furniture_style": "modern",
-        "distinctive_elements": ["blue curtains", "wooden bed frame", "white lamp"],
-        "color_scheme": "white and blue",
-        "window_style": "large window with white frame",
-        "decorative_elements": ["plant on windowsill"]
-    }}
-}}
+                Return ONLY valid JSON format (no markdown, no code blocks):
+                {{
+                    "room_type": "bedroom",
+                    "confidence": 0.9,
+                    "signature": {{
+                        "wall_color": "white",
+                        "floor_type": "wood",
+                        "furniture_style": "modern",
+                        "distinctive_elements": ["blue curtains", "wooden bed frame", "white lamp"],
+                        "color_scheme": "white and blue",
+                        "window_style": "large window with white frame",
+                        "decorative_elements": ["plant on windowsill"]
+                    }}
+                }}
 
-Valid room types: kitchen, bathroom, living_room, bedroom, hallway, views, house_plan, common_areas, unknown
+                Valid room types: kitchen, bathroom, living_room, bedroom, hallway, views, house_plan, common_areas, unknown
 
-{description_text}
-"""
+                {description_text}
+            """
             
             for attempt in range(max_retries):
                 try:

@@ -1,0 +1,433 @@
+{
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/78/7d/cf/296951291.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/15/25/dc/296951292.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/51/a1/75/296951293.jpg"
+      ],
+      "gallery_indices": [
+        9,
+        10,
+        11
+      ],
+      "num_images": 3,
+      "signatures": [
+        {
+          "wall_color": "plain white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "black round dining table with a single pedestal base",
+            "light grey, padded, tufted dining chairs with wooden legs",
+            "wooden cabinet with a vertical black marble-like center panel",
+            "artwork featuring a woman in colorful attire on the cabinet",
+            "two red glass vases and one blue glass vase on the cabinet",
+            "set of nested black side tables with slender legs",
+            "black and white striped area rug",
+            "glass vase with red and white flowers on dining table"
+          ],
+          "color_scheme": "neutral tones with black accents and bright red and blue decor pieces",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "large colorful portrait artwork",
+            "bright floral arrangement"
+          ],
+          "unique_architectural_features": "none visible"
+        },
+        {
+          "wall_color": "white",
+          "floor_type": "light wood",
+          "furniture_style": "modern",
+          "distinctive_elements": [
+            "turquoise mid-century modern sofa with tufted back",
+            "two red throw pillows on sofa",
+            "gold floor lamp with exposed bulb",
+            "set of three black circular nesting coffee tables",
+            "black and white striped area rug"
+          ],
+          "color_scheme": "white, turquoise, red, black",
+          "window_style": "white framed window with two sections, located on right wall",
+          "decorative_elements": [
+            "small vases and plants on coffee tables",
+            "red and white faux flowers in foreground"
+          ]
+        },
+        {
+          "wall_color": "plain white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "wooden cabinet with black marble middle panel",
+            "three round nested black coffee tables",
+            "striped black and white rug",
+            "grey cushioned chairs with wooden legs",
+            "round black dining table",
+            "decorative vases in pastel colors on cabinet",
+            "colorful painting of a woman on cabinet",
+            "white and black small decorative objects on coffee tables",
+            "flower vase with pink and white flowers on dining table"
+          ],
+          "color_scheme": "neutral tones with black accents and pastel highlights",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "colorful painting",
+            "decorative ceramic vases",
+            "flowers in vase"
+          ],
+          "architectural_features": "none distinctive visible"
+        }
+      ]
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/35/1a/b1/296951266.jpg"
+      ],
+      "gallery_indices": [
+        2
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white with marble-like gray veining backsplash",
+          "floor_type": "light wood laminate",
+          "furniture_style": "modern with glossy white cabinetry",
+          "distinctive_elements": [
+            "built-in stainless steel microwave and oven stack",
+            "black countertop",
+            "glass jars and wooden cutting board on counter",
+            "small plant and candles near the window",
+            "black sink under window"
+          ],
+          "color_scheme": "white, black, and natural wood tones",
+          "window_style": "small rectangular window with white frame positioned above sink",
+          "decorative_elements": [
+            "small green plant in a basket",
+            "three white candles on black tray"
+          ]
+        }
+      ]
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/3c/0d/dc/296951294.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/29/40/2c/296951295.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/98/9c/92/296951297.jpg"
+      ],
+      "gallery_indices": [
+        12,
+        13,
+        14
+      ],
+      "num_images": 3,
+      "signatures": [
+        {
+          "wall_color": "white",
+          "floor_type": "wood, light brown",
+          "furniture_style": "modern, minimalistic",
+          "distinctive_elements": [
+            "white quilted bedspread",
+            "rust-orange quilted throw blanket",
+            "beige runner on bed",
+            "decorative pillows with leaf pattern in rust-orange and beige",
+            "small round beige side table",
+            "table lamps with square wooden base and light beige lampshades",
+            "large abstract wall art with beige, rust, black and white tones"
+          ],
+          "color_scheme": "white, rust-orange, beige, light brown",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "abstract geometric painting above bed"
+          ]
+        },
+        {
+          "wall_color": "white",
+          "floor_type": "light brown wood",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "white bedspread with rust-orange quilted blanket",
+            "two rust-orange and white leaf patterned pillows",
+            "two beige pillows",
+            "two modern small table lamps with beige shades on round light tan bedside tables",
+            "single large geometric abstract artwork above bed with beige, rust, black shapes",
+            "single large white-framed window on right wall"
+          ],
+          "color_scheme": "white, rust-orange, beige, light brown",
+          "window_style": "large rectangular window with white frame, located on right wall",
+          "decorative_elements": [
+            "abstract geometric painting above bed"
+          ],
+          "architectural_features": "simple, clean lines with no additional molding or trim details"
+        },
+        {
+          "wall_color": "white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "minimalist modern",
+          "distinctive_elements": [
+            "rust-orange quilted bedspread",
+            "white bedding with quilted pattern",
+            "decorative pillows with leaf patterns in rust-orange and beige",
+            "two small round nightstands with thin metal legs",
+            "matching ceramic lamps with rust-orange leaf designs and beige lampshades"
+          ],
+          "color_scheme": "white and rust-orange with beige accents",
+          "window_style": "single large white-framed window located on the right wall",
+          "decorative_elements": [
+            "large abstract painting above the bed with white, beige, black, and rust-orange elements"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/80/39/c2/296951308.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/12/10/ed/296951309.jpg"
+      ],
+      "gallery_indices": [
+        18,
+        19
+      ],
+      "num_images": 2,
+      "signatures": [
+        {
+          "wall_color": "white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "green ribbed blanket",
+            "white quilted bed cover",
+            "pillows with green and botanical leaf patterns",
+            "round white side table with wooden legs",
+            "small beige table lamp with cylindrical fabric shade",
+            "green plant in corner near window"
+          ],
+          "color_scheme": "white and green with natural wood tones",
+          "window_style": "small rectangular window with white frame located at back left",
+          "decorative_elements": [
+            "large abstract painting in shades of green and white above the bed"
+          ]
+        },
+        {
+          "wall_color": "white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "modern minimalistic",
+          "distinctive_elements": [
+            "white bedside table with three wooden legs",
+            "cream colored lamp with cylindrical shade",
+            "gray and green pillows, some with leaf patterns",
+            "large abstract green and white painting above the bed",
+            "white quilted bedspread",
+            "green ribbed throw blanket at bed foot"
+          ],
+          "color_scheme": "white, green, gray, natural wood tones",
+          "window_style": "not visible in image",
+          "decorative_elements": [
+            "large green-themed abstract wall art",
+            "small plants partially visible on floor"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_3",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e5/f7/a5/296951300.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/cc/71/38/296951310.jpg"
+      ],
+      "gallery_indices": [
+        20,
+        21
+      ],
+      "num_images": 2,
+      "signatures": [
+        {
+          "wall_color": "white",
+          "floor_type": "light wood",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "white bedspread with diamond quilting",
+            "two gray pillows with green accent pillows behind",
+            "two black and white leaf-patterned decorative pillows",
+            "green textured throw blanket at foot of bed",
+            "two small white nightstands with wooden legs",
+            "two beige table lamps with cylindrical fabric shades",
+            "large abstract painting with green, white, and gray tones above bed"
+          ],
+          "color_scheme": "white, gray, green, beige",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "large abstract wall art above bed"
+          ]
+        },
+        {
+          "wall_color": "white",
+          "floor_type": "light wood",
+          "furniture_style": "modern minimalistic",
+          "distinctive_elements": [
+            "white bedspread with beige throw blanket at foot",
+            "four pillows with two beige satin, two orange, and two white with black trim",
+            "round beige bedside tables on both sides",
+            "two beige ceramic table lamps with white shades",
+            "abstract wall art with beige, black, and white blocks"
+          ],
+          "color_scheme": "white, beige, orange, and black accents",
+          "window_style": "not visible in image",
+          "decorative_elements": [
+            "abstract painting above bed"
+          ],
+          "unique_features": "room layout with door located to right side and closet doors directly in front of bed"
+        }
+      ]
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/83/b4/e8/296951271.jpg"
+      ],
+      "gallery_indices": [
+        4
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "smooth light beige tile",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "round illuminated mirror",
+            "white vessel sink with tall chrome faucet",
+            "white vanity cabinet with sleek handles",
+            "glass-enclosed walk-in shower with chrome fixtures",
+            "small green artificial plant on vanity",
+            "reed diffuser on vanity",
+            "small towels neatly folded on vanity"
+          ],
+          "color_scheme": "light beige, white, and chrome",
+          "window_style": "small frosted window with white frame above shower",
+          "decorative_elements": [
+            "small basket with towels and flowers inside shower area"
+          ],
+          "architectural_features": "shower base elevated slightly from main floor level"
+        }
+      ]
+    },
+    {
+      "division_id": "bathroom_2",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/a6/13/d3/296951298.jpg"
+      ],
+      "gallery_indices": [
+        15
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige with smooth finish",
+          "floor_type": "dark gray tile",
+          "furniture_style": "modern minimalist",
+          "distinctive_elements": [
+            "white wall-mounted toilet with dual flush buttons",
+            "white round vessel sink on white floating vanity",
+            "grey-blue textured hand towel with two small white soaps on the vanity",
+            "small green artificial plant in white pot on vanity",
+            "glass shower enclosure with chrome fixtures"
+          ],
+          "color_scheme": "neutral tones of beige, white, and gray",
+          "window_style": "none visible",
+          "decorative_elements": [
+            "small decorative reed diffuser on vanity",
+            "abstract geometric painting partially visible in mirror reflection"
+          ]
+        }
+      ]
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/ca/ea/bf/296951316.jpg",
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/8f/7e/29/296951317.jpg"
+      ],
+      "gallery_indices": [
+        27,
+        28
+      ],
+      "num_images": 2,
+      "signatures": [
+        {
+          "wall_color": "plain white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "none present",
+          "distinctive_elements": [
+            "white framed doors",
+            "simple baseboard molding"
+          ],
+          "color_scheme": "white and light brown",
+          "window_style": "not visible in this photo",
+          "decorative_elements": [],
+          "unique_features": "narrow, elongated shape with light wood flooring continuing into adjoining rooms"
+        },
+        {
+          "wall_color": "plain white",
+          "floor_type": "light wood laminate",
+          "furniture_style": "none visible",
+          "distinctive_elements": [
+            "simple white doors with modern silver handles",
+            "white baseboards"
+          ],
+          "color_scheme": "neutral white and light wood",
+          "window_style": "no windows visible",
+          "decorative_elements": [],
+          "architectural_features": "narrow corridor with three doorways on either side, flat ceiling with recessed lighting"
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_2",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/39/61/c3/296951318.jpg"
+      ],
+      "gallery_indices": [
+        29
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white",
+          "floor_type": "wood laminate, light brown",
+          "furniture_style": "none visible",
+          "distinctive_elements": [
+            "white doors with dark hinges",
+            "simple square white light switch"
+          ],
+          "color_scheme": "white and light brown",
+          "window_style": "none visible in hallway",
+          "decorative_elements": [
+            "small table with light-colored lamp visible at end of hallway"
+          ],
+          "unique_features": "narrow corridor with multiple white doors on both sides, wood laminate floor extending fully down hallway"
+        }
+      ]
+    }
+  ]
+}

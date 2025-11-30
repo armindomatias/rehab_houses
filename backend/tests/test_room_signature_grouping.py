@@ -491,7 +491,7 @@ async def main():
     grouper = RoomSignatureGrouper()
     
     # Load test data
-    listing_id = "34547389"
+    listing_id = "34195114"
     manipulator = IdealistaDataManipulator(
         os.path.join(backend_dir, f"data/scraped_data/idealista_listing_{listing_id}.json")
     )

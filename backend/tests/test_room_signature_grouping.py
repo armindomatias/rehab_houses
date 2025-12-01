@@ -320,23 +320,7 @@ class RoomSignatureGrouper:
                     f"(similarity: {best_similarity:.2f})"
                 )
             else:
-                # Check gallery adjacency as fallback
-                if clusters:
-                    last_cluster = clusters[-1]
-                    last_image = last_cluster[-1]
-                    last_index = last_image.get('gallery_index', 0)
-                    current_index = image.get('gallery_index', 0)
-                    is_adjacent = abs(current_index - last_index) <= 2
-                    
-                    if is_adjacent and best_similarity > 0.3:  # Some similarity + adjacency
-                        clusters[-1].append(image)
-                        self.logger.debug(
-                            f"  Added image {image.get('gallery_index')} to last cluster "
-                            f"(adjacent, similarity: {best_similarity:.2f})"
-                        )
-                        continue
-                
-                # Start new cluster
+                # Start new cluster (no gallery proximity fallback)
                 clusters.append([image])
                 self.logger.debug(
                     f"  Started new cluster for image {image.get('gallery_index')} "
@@ -491,7 +475,7 @@ async def main():
     grouper = RoomSignatureGrouper()
     
     # Load test data
-    listing_id = "34195114"
+    listing_id = "34082358"
     manipulator = IdealistaDataManipulator(
         os.path.join(backend_dir, f"data/scraped_data/idealista_listing_{listing_id}.json")
     )

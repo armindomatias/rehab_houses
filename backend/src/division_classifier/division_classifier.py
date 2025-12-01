@@ -231,6 +231,190 @@ class DivisionClassifier:
 
         return aggregated
 
+    async def _classify_division_async(
+        self,
+        division: Dict[str, Any],
+        model: str,
+        semaphore: asyncio.Semaphore,
+        max_retries: int = 3,
+        backoff_base: float = 1.5
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Classify a division (group of images representing one physical room).
+        
+        Args:
+            division: Division dict with 'division_id', 'room_type', 'images' (list of URLs)
+            model: Model name to use
+            semaphore: Semaphore for concurrency control
+            max_retries: Maximum retry attempts
+            backoff_base: Backoff multiplier
+        
+        Returns:
+            Classification result with division_id and all images included
+        """
+        division_id = division.get('division_id', 'unknown')
+        room_type = division.get('room_type', 'unknown')
+        image_urls = division.get('images', [])
+        
+        if not image_urls:
+            self.logger.warning(f"Division {division_id} has no images, skipping")
+            return None
+        
+        system_prompt = self._open_prompt()
+        
+        # Build prompt for multiple images of the same room
+        images_text = "\n".join([f"Image {i+1}: {url}" for i, url in enumerate(image_urls)])
+        prompt_text = f"""Analyze these {len(image_urls)} images of the SAME physical room (different angles/views).
+
+Division ID: {division_id}
+Room Type: {room_type}
+Images:
+{images_text}
+
+These images show different angles/views of the same room. Analyze ALL images together to get a comprehensive assessment of the room. Consider all visible elements across all images.
+
+Return only the JSON, no prose.
+{system_prompt}"""
+        
+        # Build content with all images
+        input_content = [{"type": "input_text", "text": prompt_text}]
+        for img_url in image_urls:
+            input_content.append({"type": "input_image", "image_url": img_url})
+        
+        attempt = 0
+        while attempt < max_retries:
+            attempt += 1
+            try:
+                async with semaphore:
+                    start_time = time.time()
+                    response = await self.async_client.responses.create(
+                        model=model,
+                        input=[{"role": "user", "content": input_content}],
+                    )
+                    elapsed_time = time.time() - start_time
+                    self.logger.info(f"Classified division {division_id} ({len(image_urls)} images) in {elapsed_time:.2f}s")
+
+                parsed = self._parse_json_safely(response.output_text)
+                if parsed is None:
+                    raise ValueError("Failed to parse JSON from model output")
+                
+                # Add division metadata
+                parsed['division_id'] = division_id
+                parsed['room_type'] = room_type
+                parsed['images'] = image_urls  # Include all images in the division
+                parsed['num_images'] = len(image_urls)
+                
+                return parsed
+            except Exception as e:
+                wait_s = backoff_base ** attempt
+                self.logger.warning(
+                    f"Attempt {attempt}/{max_retries} failed for division {division_id}: {e}. "
+                    f"Retrying in {wait_s:.1f}s..."
+                )
+                await asyncio.sleep(wait_s)
+
+        self.logger.error(f"All retries failed for division: {division_id}")
+        return None
+
+    async def classify_divisions_concurrently(
+        self,
+        image_grouping: Dict[str, List[Dict[str, Any]]],
+        listing_id: str,
+        output_jsonl_filename: Optional[str] = None,
+        output_aggregated_filename: Optional[str] = None,
+        max_concurrency: int = 5,
+        model: str = "gpt-4.1-mini",
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        Classify divisions (groups of images) concurrently.
+        
+        Uses the output from image_grouping where each division contains multiple images
+        of the same physical room. Classifies each division as a whole.
+        
+        Args:
+            image_grouping: Dict from ImageGrouper with structure:
+                {
+                    "bedroom": [
+                        {
+                            "division_id": "bedroom_1",
+                            "room_type": "bedroom",
+                            "images": [url1, url2, url3, ...],
+                            ...
+                        }
+                    ],
+                    ...
+                }
+            listing_id: The listing ID
+            output_jsonl_filename: Optional filename for JSONL output
+            output_aggregated_filename: Optional filename for aggregated JSON output
+            max_concurrency: Maximum number of concurrent requests
+            model: OpenAI model to use for classification
+        
+        Returns:
+            Aggregated results organized by room_type, with each division containing
+            its classification and all its images
+        """
+        if not image_grouping:
+            self.logger.warning("image_grouping is empty, nothing to classify")
+            return {}
+        
+        # Create listing-specific folder
+        listing_folder = os.path.join("data", "image_analysis", listing_id)
+        os.makedirs(listing_folder, exist_ok=True)
+        
+        jsonl_path = None
+        if output_jsonl_filename:
+            jsonl_path = os.path.join(listing_folder, output_jsonl_filename)
+            with open(jsonl_path, "w", encoding="utf-8") as f:
+                f.write("")
+        
+        # Flatten all divisions into a list
+        all_divisions = []
+        for room_type, divisions in image_grouping.items():
+            if room_type in ["views", "house_plan", "common_areas", "unknown"]:
+                continue
+            all_divisions.extend(divisions)
+        
+        if not all_divisions:
+            self.logger.warning("No divisions to classify")
+            return {}
+        
+        self.logger.info(f"Classifying {len(all_divisions)} divisions with max_concurrency={max_concurrency}")
+        
+        semaphore = asyncio.Semaphore(max_concurrency)
+        tasks = [self._classify_division_async(div, model, semaphore) for div in all_divisions]
+        
+        aggregated: Dict[str, List[Dict[str, Any]]] = {}
+        completed = 0
+        
+        for coro in asyncio.as_completed(tasks):
+            result = await coro
+            completed += 1
+            if result is None:
+                continue
+            
+            # Write to JSONL as we go
+            if jsonl_path:
+                with open(jsonl_path, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(result, ensure_ascii=False) + "\n")
+            
+            # Aggregate by room_type
+            room_type = result.get("room_type", "unknown")
+            aggregated.setdefault(room_type, []).append(result)
+            
+            if completed % 3 == 0:
+                self.logger.info(f"Progress: {completed}/{len(all_divisions)} divisions classified")
+        
+        # Save aggregated if requested
+        if output_aggregated_filename:
+            aggregated_path = os.path.join(listing_folder, output_aggregated_filename)
+            with open(aggregated_path, "w", encoding="utf-8") as f:
+                json.dump(aggregated, f, indent=2, ensure_ascii=False)
+            self.logger.info(f"Aggregated results saved to: {aggregated_path}")
+        
+        self.logger.info(f"Classification complete: {len(aggregated)} room types, {sum(len(v) for v in aggregated.values())} divisions")
+        return aggregated
+
     # Save the classification data
     def save_classification_data(self, property_data: dict, listing_id: str, filename: str):
         """Save property data to JSON file in a listing-specific folder"""

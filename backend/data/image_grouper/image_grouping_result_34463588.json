@@ -1,0 +1,291 @@
+{
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0a/16/7d/295138159.jpg"
+      ],
+      "gallery_indices": [
+        0
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/0a/16/7d/295138159.jpg",
+          "description": "Living room",
+          "room_type": "living_room",
+          "confidence": 0.85,
+          "room_signature": {
+            "wall_color": "white",
+            "floor_type": "brown ceramic tile",
+            "furniture_style": "none visible",
+            "distinctive_elements": [
+              "wood paneling on lower right wall",
+              "three door openings with white doors and frames",
+              "one door opening with no door",
+              "exposed wiring and single hanging light bulb"
+            ],
+            "color_scheme": "white and brown",
+            "window_style": "none visible",
+            "decorative_elements": []
+          },
+          "gallery_index": 0
+        }
+      ]
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c7/73/85/295138162.jpg"
+      ],
+      "gallery_indices": [
+        3
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c7/73/85/295138162.jpg",
+          "description": "Photo",
+          "room_type": "common_areas",
+          "confidence": 0.85,
+          "room_signature": {
+            "wall_color": "white",
+            "floor_type": "brown ceramic tile",
+            "furniture_style": "none",
+            "distinctive_elements": [
+              "blue door with multiple glass panes",
+              "small staircase leading outside",
+              "small built-in wall cabinet with two doors",
+              "exposed hanging light bulb with yellow socket"
+            ],
+            "color_scheme": "white and brown with blue accent",
+            "window_style": "none",
+            "decorative_elements": [],
+            "architectural_features": "door positioned low with three steps leading outside, built-in wall cabinet, no furniture"
+          },
+          "gallery_index": 3
+        }
+      ]
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/7f/b6/b4/295138084.jpg"
+      ],
+      "gallery_indices": [
+        4
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/7f/b6/b4/295138084.jpg",
+          "description": "Bedroom",
+          "room_type": "bedroom",
+          "confidence": 0.85,
+          "room_signature": {
+            "wall_color": "white",
+            "floor_type": "wood",
+            "furniture_style": "rustic",
+            "distinctive_elements": [
+              "large wooden chest with iron hinges",
+              "pottery vase beside chest",
+              "ceiling lantern light fixture"
+            ],
+            "color_scheme": "natural wood tones and white",
+            "window_style": "no visible window; open doorway to outside",
+            "decorative_elements": [
+              "small framed art above chest"
+            ],
+            "unique_features": [
+              "low open doorway leading directly outside with tiled floor area outside",
+              "chest placed in corner against two walls"
+            ]
+          },
+          "gallery_index": 4
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/15/6f/47/295138085.jpg"
+      ],
+      "gallery_indices": [
+        5
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/15/6f/47/295138085.jpg",
+          "description": "Bedroom",
+          "room_type": "bedroom",
+          "confidence": 0.8,
+          "room_signature": {
+            "wall_color": "off-white with patches of discoloration and possible damage",
+            "floor_type": "wooden plank floor with a warm brown finish",
+            "furniture_style": "none present",
+            "distinctive_elements": [
+              "hexagonal hanging brass light fixture",
+              "visible wall damage near floor edges"
+            ],
+            "color_scheme": "neutral warm tones with brown floor and off-white walls",
+            "window_style": "not visible in image",
+            "decorative_elements": []
+          },
+          "gallery_index": 5
+        }
+      ]
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/82/23/fe/295138164.jpg"
+      ],
+      "gallery_indices": [
+        6
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/82/23/fe/295138164.jpg",
+          "description": "Kitchen",
+          "room_type": "kitchen",
+          "confidence": 1.0,
+          "room_signature": {
+            "wall_color": "white tiles with a section of brown wood paneling",
+            "floor_type": "white ceramic tiles",
+            "furniture_style": "rustic/traditional with wooden shelves and simple fixtures",
+            "distinctive_elements": [
+              "brown wood paneling on walls and a doorway frame",
+              "blue and white checkered curtain under the sink",
+              "white freestanding stove with 4 electric burners",
+              "small wooden open shelves with black metal brackets",
+              "white water heater mounted on wall",
+              "orange propane tank partially visible near stove"
+            ],
+            "color_scheme": "white, brown wood, and blue",
+            "window_style": "small rectangular opening above stove (not a window but an opening/vent)",
+            "decorative_elements": []
+          },
+          "gallery_index": 6
+        }
+      ]
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/1c/a6/295138178.jpg"
+      ],
+      "gallery_indices": [
+        10
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/92/1c/a6/295138178.jpg",
+          "description": "Corridor",
+          "room_type": "hallway",
+          "confidence": 0.95,
+          "room_signature": {
+            "wall_color": "white",
+            "floor_type": "brown ceramic tiles",
+            "furniture_style": "none visible",
+            "distinctive_elements": [
+              "narrow corridor layout",
+              "two ceiling-mounted spotlights",
+              "doorway visible at end with white door frame there and doorway to right with white frame"
+            ],
+            "color_scheme": "white and brown",
+            "window_style": "no windows visible",
+            "decorative_elements": []
+          },
+          "gallery_index": 10
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_2",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e7/61/b9/295138145.jpg"
+      ],
+      "gallery_indices": [
+        11
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e7/61/b9/295138145.jpg",
+          "description": "Corridor",
+          "room_type": "hallway",
+          "confidence": 0.95,
+          "room_signature": {
+            "wall_color": "white",
+            "floor_type": "terracotta ceramic tiles",
+            "furniture_style": "none",
+            "distinctive_elements": [
+              "narrow corridor",
+              "single ceiling light fixture with two spotlights",
+              "visible door frame with chipped paint on left"
+            ],
+            "color_scheme": "white walls with terracotta floor",
+            "window_style": "none visible",
+            "decorative_elements": [],
+            "architectural_features": "narrow passage with plain white walls, clear ceiling cornice molding"
+          },
+          "gallery_index": 11
+        }
+      ]
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/7d/aa/ab/295138146.jpg"
+      ],
+      "gallery_indices": [
+        12
+      ],
+      "num_images": 1,
+      "source_items": [
+        {
+          "url": "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/7d/aa/ab/295138146.jpg",
+          "description": "Bathroom",
+          "room_type": "bathroom",
+          "confidence": 0.95,
+          "room_signature": {
+            "wall_color": "white tiles with blue decorative trim",
+            "floor_type": "white tiled floor",
+            "furniture_style": "simple white ceramic sink with silver faucet",
+            "distinctive_elements": [
+              "blue floral patterned tile border around walls",
+              "metal towel rack above sink",
+              "white shelving recessed into wall",
+              "decorative tile border with blue ribbon-like pattern"
+            ],
+            "color_scheme": "white and blue",
+            "window_style": "no visible window",
+            "decorative_elements": []
+          },
+          "gallery_index": 12
+        }
+      ]
+    }
+  ]
+}

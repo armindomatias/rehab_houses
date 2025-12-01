@@ -57,16 +57,16 @@ class VisionBatchGrouper:
             
             prompt = f"""Classify this real estate photo. Return ONLY the room_type.
 
-room_type? kitchen/bathroom/living_room/bedroom/hallway/views/house_plan/common_areas/unknown
+                room_type? kitchen/bathroom/living_room/bedroom/hallway/views/house_plan/common_areas/unknown
 
-Return JSON format:
-{{
-    "room_type": "bedroom",
-    "confidence": 0.9
-}}
+                Return JSON format:
+                {{
+                    "room_type": "bedroom",
+                    "confidence": 0.9
+                }}
 
-{description_text}
-"""
+                {description_text}
+            """
             
             for attempt in range(max_retries):
                 try:
@@ -488,7 +488,7 @@ async def main():
     grouper = VisionBatchGrouper()
     
     # Load test data
-    listing_id = "34195114"
+    listing_id = "34082358"
     manipulator = IdealistaDataManipulator(
         os.path.join(backend_dir, f"data/scraped_data/idealista_listing_{listing_id}.json")
     )

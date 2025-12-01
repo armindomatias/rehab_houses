@@ -1,0 +1,364 @@
+{
+  "living_room": [
+    {
+      "division_id": "living_room_1",
+      "room_type": "living_room",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/47/e0/47/288091036.jpg"
+      ],
+      "gallery_indices": [
+        0
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light peach",
+          "floor_type": "parquet wood",
+          "furniture_style": "classic, antique",
+          "distinctive_elements": [
+            "striped sofa with peach and beige tones",
+            "red patterned armchairs and cushions",
+            "ornate gold-framed mirror and multiple small framed pictures on the wall",
+            "wooden side table and vintage lamps with red lampshades",
+            "small table covered with a patterned golden-brown cloth holding books",
+            "decorative lamp with exposed bulb on a tall stand",
+            "white roman shades on large windows with white frames"
+          ],
+          "color_scheme": "peach, red, brown, golden tones",
+          "window_style": "large rectangular windows with white frames and roman shades",
+          "decorative_elements": [
+            "numerous framed photographs and art pieces on walls",
+            "bookshelves with books",
+            "ceramic bowl on wooden desk",
+            "plants near windows"
+          ]
+        }
+      ]
+    }
+  ],
+  "kitchen": [
+    {
+      "division_id": "kitchen_1",
+      "room_type": "kitchen",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/21/c0/2a/288091057.jpg"
+      ],
+      "gallery_indices": [
+        1
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white",
+          "floor_type": "blue linoleum or vinyl",
+          "furniture_style": "rustic/retro with wooden cabinet and white cabinetry",
+          "distinctive_elements": [
+            "decorative blue and white tiled backsplash with geometric patterns",
+            "wooden cabinet with glass paneled doors",
+            "small round marble table attached to the wall",
+            "wooden spice rack and small rolling cart",
+            "assorted ceramic decorative items on shelves",
+            "white upper and lower kitchen cabinets",
+            "metal stove with oven and hood"
+          ],
+          "color_scheme": "blue, white, and natural wood tones",
+          "window_style": "wide sliding windows with white frames situated at far end of the room",
+          "decorative_elements": [
+            "ceramic jugs and decorative pottery on open shelves",
+            "various small kitchen items and jars neatly arranged on shelves"
+          ]
+        }
+      ]
+    }
+  ],
+  "bathroom": [
+    {
+      "division_id": "bathroom_1",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/e6/3a/35/288091059.jpg"
+      ],
+      "gallery_indices": [
+        3
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "cream white with orange decorative tile patterns",
+          "floor_type": "not fully visible, appears to be tiled",
+          "furniture_style": "vintage/traditional ceramic washbasin and toilet",
+          "distinctive_elements": [
+            "ornate carved framed mirror with gold and brown tones",
+            "wall-mounted wooden shelf with small decorative duck sculpture",
+            "three small framed vintage-style pictures",
+            "white ceramic washbasin with scalloped edges",
+            "liquid soap dispenser with red liquid on sink",
+            "toilet paper holder attached to side of toilet"
+          ],
+          "color_scheme": "cream white, orange, brown, and white",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "ornate mirror frame",
+            "small duck sculpture on wooden shelf",
+            "vintage style pictures arranged horizontally on wall"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bathroom_2",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c8/9b/bc/288091061.jpg"
+      ],
+      "gallery_indices": [
+        8
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "white with lower half covered in vertically striped black and white tiles",
+          "floor_type": "dark tile",
+          "furniture_style": "classic white porcelain fixtures",
+          "distinctive_elements": [
+            "small potted plant on bidet",
+            "wooden stool near the corner",
+            "white towel on metal towel rack",
+            "wall-mounted hand soap dispenser"
+          ],
+          "color_scheme": "monochrome black and white with natural wood accents",
+          "window_style": "small rectangular frosted window with white frame located high on wall",
+          "decorative_elements": [
+            "two small framed black and white photos on tiled wall"
+          ],
+          "unique_architectural_features": "half wall of vertically striped tiles, contrasting checkerboard tile pattern on shower wall"
+        }
+      ]
+    },
+    {
+      "division_id": "bathroom_3",
+      "room_type": "bathroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/54/dd/f4/288091063.jpg"
+      ],
+      "gallery_indices": [
+        11
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "glossy peach/pink tiles",
+          "floor_type": "not visible",
+          "furniture_style": "vintage/retro",
+          "distinctive_elements": [
+            "peach/pink tiled walls",
+            "matching pink toilet seat",
+            "white bathtub with pink handheld shower",
+            "white sink",
+            "ornate vintage chandelier light fixture"
+          ],
+          "color_scheme": "peach/pink and white",
+          "window_style": "not visible",
+          "decorative_elements": [],
+          "unique_architectural_features": "high ceiling with white painted upper wall area, ornate chandelier, metal ventilation cover below bathtub"
+        }
+      ]
+    }
+  ],
+  "bedroom": [
+    {
+      "division_id": "bedroom_1",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/39/d5/a0/290563294.jpg"
+      ],
+      "gallery_indices": [
+        4
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "beige",
+          "floor_type": "parquet wood",
+          "furniture_style": "mid-century modern",
+          "distinctive_elements": [
+            "large wooden built-in wardrobe with three vertical doors and top storage",
+            "wall-mounted wooden shelves with books and figurines",
+            "brown wooden cabinet below shelves",
+            "fringed, woven ceiling light fixture in dark color",
+            "old-style CRT television",
+            "open door with white interior frame on the right side",
+            "green box and wooden furniture pieces on the right"
+          ],
+          "color_scheme": "neutral beige and brown wood tones",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "assorted books and collectors' figurines on wall shelves"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_2",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/46/c5/dd/288091062.jpg"
+      ],
+      "gallery_indices": [
+        9
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "beige",
+          "floor_type": "wood parquet",
+          "furniture_style": "classic vintage wooden furniture",
+          "distinctive_elements": [
+            "wooden dresser with mirror above",
+            "dark red armchair with white and red patterned cushions",
+            "wooden desk with several small drawers",
+            "tv on a white crocheted table cover",
+            "wooden high chair with white cushion",
+            "variety of framed artwork on the walls",
+            "white bedspread with decorative pillows"
+          ],
+          "color_scheme": "warm neutrals with dark red accents",
+          "window_style": "tall window with beige curtains and lace sheer curtain underneath",
+          "decorative_elements": [
+            "framed paintings and religious iconography on the walls",
+            "small figurines on the bedside table",
+            "table lamp with white lampshade"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "bedroom_3",
+      "room_type": "bedroom",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/b9/43/36/290303840.jpg"
+      ],
+      "gallery_indices": [
+        10
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "wood parquet",
+          "furniture_style": "vintage/retro",
+          "distinctive_elements": [
+            "wooden wardrobe with glossy finish",
+            "small wooden bedside table with two drawers",
+            "white table lamp with cylindrical shade",
+            "bed with white and patterned pillow including blue and beige tones",
+            "wicker basket on wooden table",
+            "decorative framed collage on wall"
+          ],
+          "color_scheme": "light beige, brown wood tones, white, blue accents",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "small vintage framed pictures",
+            "white garment hanging on stand",
+            "pink fabric box on top of wardrobe"
+          ]
+        }
+      ]
+    }
+  ],
+  "common_areas": [
+    {
+      "division_id": "common_areas_1",
+      "room_type": "common_areas",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/8b/1b/f0/290303839.jpg"
+      ],
+      "gallery_indices": [
+        6
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light beige",
+          "floor_type": "wood parquet",
+          "furniture_style": "classic/antique wooden furniture",
+          "distinctive_elements": [
+            "dark wood built-in bookshelves lining walls",
+            "wooden chairs with floral upholstered seats",
+            "wooden bench with slatted seat",
+            "table with books and decorative objects",
+            "table lamp with beige shade",
+            "wood framed paintings above bookshelves"
+          ],
+          "color_scheme": "earth tones, beige and brown",
+          "window_style": "not visible",
+          "decorative_elements": [
+            "assorted books covering shelves",
+            "small sculptures and framed photos on shelves",
+            "color-blocked area rug in muted tones (black, gray, beige, purple)"
+          ]
+        }
+      ]
+    }
+  ],
+  "hallway": [
+    {
+      "division_id": "hallway_1",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/24/9f/c3/288091064.jpg"
+      ],
+      "gallery_indices": [
+        12
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "light pink/beige",
+          "floor_type": "parquet wood",
+          "furniture_style": "classic/antique",
+          "distinctive_elements": [
+            "ornate wooden display cabinet with glass doors and various figurines inside",
+            "antique wooden side table with curved legs",
+            "wooden chair with carved legs and cushion seating",
+            "decorative small statuette on display cabinet",
+            "blue patterned shopping trolley"
+          ],
+          "color_scheme": "neutral light pink/beige with dark wood",
+          "window_style": "none visible, doorways with cream colored frames",
+          "decorative_elements": [
+            "framed black and white portrait above the display cabinet",
+            "modern textured painting on right wall",
+            "wall sconce lighting visible in adjacent room"
+          ]
+        }
+      ]
+    },
+    {
+      "division_id": "hallway_2",
+      "room_type": "hallway",
+      "images": [
+        "https://img4.idealista.pt/blur/WEB_DETAIL/0/id.pro.pt.image.master/c0/95/c2/288091065.jpg"
+      ],
+      "gallery_indices": [
+        13
+      ],
+      "num_images": 1,
+      "signatures": [
+        {
+          "wall_color": "brown marble tiles",
+          "floor_type": "white marble stairs",
+          "furniture_style": "none",
+          "distinctive_elements": [
+            "blue and white patterned tile feature wall at top of stairs",
+            "metal handrails on both sides of the stairs",
+            "silver mailboxes visible on left side"
+          ],
+          "color_scheme": "neutral brown and white with blue accent",
+          "window_style": "none visible",
+          "decorative_elements": []
+        }
+      ]
+    }
+  ]
+}
